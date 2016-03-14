@@ -26,6 +26,8 @@
 	<link href="/manifest.json" rel="manifest">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/slidepic.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	
 
 	<script type="text/javascript" async="" src="js/intercomcdn.js"></script>
@@ -81,7 +83,6 @@
 			s=b.getElementsByTagName(e)[0];
 			s.parentNode.insertBefore(t,s)
 		}(window,document,'script','//connect.facebook.net/en_US/fbevents.js');
-
 		fbq('init', '1022947907739705');
 		fbq('track', "PageView");
 	</script>
@@ -128,9 +129,7 @@
 	<script>
 		$(document).ready(function(){
   			$('ul.tabs').tabs();
-
   			var headerOptions = { offset: "#how_it_works" };
-
   			var header = new Headhesive(".header", headerOptions);
 		});
 	</script>
@@ -213,9 +212,41 @@
 
 					<!-- SLIDER -->
 					<div class="col m6 s11 offset-s1 offset-m1 center-align multi-device-mockup">
+					<div id="carousel-example-generic" class="carousel slide" align="center" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					  </ol>
+
+							<div class="carousel-inner" role="listbox">
+							<div class="item active">
+							  <img src="image/international.jpg" alt="image can't be load">
+							  <div class="carousel-caption">
+							   
+							  </div>
+							</div>
+							<div class="item">
+							  <img src="image/home1.jpg" alt="image can't be load">
+							  <div class="carousel-caption">
+							  
+							  </div>
+							</div>
+							<div class="item">
+							  <img src="image/world.jpg" alt="image can't be load">
+							  <div class="carousel-caption">
+							  
+							  </div>
+							</div>
+							...
+					</div>
+					</div>
+
+					<!--<div class="col m6 s11 offset-s1 offset-m1 center-align multi-device-mockup">
 						<img src="image/international.jpg" alt="Multi device mockup">
 
-					</div>
+					</div>-->
 					<!-- END SLIDER -->
 
 				</div>
@@ -419,10 +450,8 @@
 	    		}
 	  		});
 		});
-
 		$("form.send_feedback").submit(function(event) {
 	  		var form = $(this);
-
 	  		$.ajax({
 	    		type: form.attr("method"),
 	    		url: form.attr("action"),
@@ -435,12 +464,10 @@
 	    		$("form.send_feedback button").addClass("hide");
 	    		$("form.send_feedback img").removeClass("hide");
 	    		$("form.send_feedback a").text("Close");
-
 	    		if (true) {
 	      		fbq('track', 'Lead');
 	    		}
 	  		});
-
 	  		event.preventDefault();
 		});
 	</script>
@@ -549,5 +576,8 @@
 
 	<div id="intercom-messenger" class="intercom-messenger intercom-messenger-inactive"></div>
 	</div>
+
+	<script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

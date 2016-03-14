@@ -1,0 +1,28 @@
+diff a/Desain/Desain 2/Home.html b/Desain/Desain 2/Home.html	(rejected hunks)
+@@ -15,24 +15,10 @@
+ 	<meta property="og:url" content="#">
+ 	<meta property="og:image" content="image/header.png">
+ 	<meta property="og:site_name" content="PBI">
+-	<link rel="stylesheet" media="all" href="http://cdn.jumpr.it/assets/sales-d78b8a17825d44a62e5127fd2306dcea.css" data-turbolinks-track="true">
++	<link rel="stylesheet" media="all" href="css/style1.css" data-turbolinks-track="true">
+ 	<meta name="csrf-param" content="authenticity_token">
+ 	<meta name="csrf-token" content="0jzTeI1PKkjDqVyhkOR2Joz0ZrDdYsIut4QAuIBho3vuKatRx9OCi6V+IOfEBS87WV979peCiIJUxdYytGeYjQ==">
+-<!-- 	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-180x180-6a9052440dcb1018aac1f9cb00488934.png" sizes="180x180">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-152x152-7902590e7560688c3825e2b0225b1f2b.png" sizes="152x152">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-144x144-8cb57a3d5a81ee6ee603883949145fe8.png" sizes="144x144">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-120x120-077bb260ad2275ef57caa0fe31abf4c4.png" sizes="120x120">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-114x114-ffed67193f3d83677aeec1e42314d5b0.png" sizes="114x114">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-76x76-8ab8beae2acfd23aced26f7fdc5f28ce.png" sizes="76x76">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-72x72-6c8681dc98ff240572377bb565375423.png" sizes="72x72">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-60x60-2a788d0c0b59dae94d85d01220ed582c.png" sizes="60x60">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-57x57-c3b5b20a36038d8962f55b837541230c.png" sizes="57x57">
+-	<link rel="apple-touch-icon" type="image/png" href="http://cdn.jumpr.it/assets/apple-touch-icon-6a9052440dcb1018aac1f9cb00488934.png">
+-	<link rel="icon" type="image/png" href="http://cdn.jumpr.it/assets/android-chrome-192x192-d70f9a0f420c4552f2882f19cfd4deb8.png" sizes="192x192">
+-	<link rel="icon" type="image/png" href="http://cdn.jumpr.it/assets/favicon-16x16-e481b351c3dfc61fe815a66ba9575f59.png" sizes="16x16">
+-	<link rel="icon" type="image/png" href="http://cdn.jumpr.it/assets/favicon-32x32-c4fc45add26e739262cab7843ecd08ba.png" sizes="32x32">
+-	<link rel="icon" type="image/png" href="http://cdn.jumpr.it/assets/favicon-96x96-740c0972f90d61f7abf395b470fc6e93.png" sizes="96x96">
+-	<link rel="icon" type="image/png" href="http://cdn.jumpr.it/assets/favicon-194x194-6a90749e08cac1f05f5e6ea22d0d697c.png" sizes="194x194"> -->
++
+ 
+ 	<meta content="image/header.png" name="msapplication-TileImage">
+ 	<meta content="#00aba9" name="msapplication-TileColor">

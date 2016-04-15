@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements AuthenticatableContract, CanResetPasswordContract {
+  use Authenticatable, CanResetPassword;
+
 {
     /**
      * The attributes that are mass assignable.

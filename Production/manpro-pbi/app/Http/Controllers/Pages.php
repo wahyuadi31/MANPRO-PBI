@@ -15,11 +15,11 @@ class Pages extends BaseController{
       mereturn homepage dari website
     */
     public function index(){
-        return view('home');
+        return view('static.home');
     }
 
     public function articles(){
-      return view('artikel');
+      return view('static.artikel');
     }
 
 }

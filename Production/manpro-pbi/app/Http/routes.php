@@ -23,7 +23,7 @@ Route::controllers([
 //Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
 
 Route::get('/test',function(){
-  return view('dynamic.artikel');
+  return view('static.home-layouted');
 });
 
 Route::auth();

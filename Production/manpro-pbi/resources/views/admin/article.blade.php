@@ -1,6 +1,13 @@
 @extends('admin.master')
 
 @section('content')
+  <nav class="navbar-inverse">
+       <div class="container">
+          <h1 class="glyphicon glyphicon-duplicate"> ARTICLE </h1>
+      <br/><br/>
+       </div>
+  </nav>
+  
   <div id="page-content-wrapper">
       <div class="container-fluid">
           <div class="row">

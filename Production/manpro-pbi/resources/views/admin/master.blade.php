@@ -20,14 +20,7 @@
               <li class="sidebar-brand">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="font-size:20px">
             <span class="glyphicon glyphicon-off" aria-hidden="true"> Hi,userAdmin</span>
-            {{-- <!--
-            <?php
-            if(isset($_POST['username']))
-            echo "Halo, ".$_POST['username']."<br>";
-            else
-            echo "Halo, ".$_COOKIE['username']."<br>";
-            ?>
-            --> --}}
+
           </a>
               </li>
       <br/><br/><br/>
@@ -50,12 +43,6 @@
 
   <!-- Header -->
   </br>
-      <nav class="navbar-inverse">
-           <div class="container">
-              <h1 class="glyphicon glyphicon-duplicate"> ARTICLE </h1>
-          <br/><br/>
-           </div>
-      </nav>
 
   <!-- Page Content -->
       @yield('content')

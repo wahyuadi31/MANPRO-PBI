@@ -57,10 +57,10 @@
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Visi Misi</a>
+                        <a class="page-scroll" href="#visi-misi">Visi Misi</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Profil</a>
+                        <a class="page-scroll" href="#lect-profile">Profil</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Artikel</a>
@@ -72,7 +72,7 @@
                       <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
                     </li>
                     <li>
-                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/uk-flag.jpg" width="30px" id="logo_bendera"></a>
+                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
                     </li>
                 </ul>
             </div>
@@ -88,26 +88,27 @@
                 <h1>Welcome to Our Site</h1>
                 <hr>
                 <p>English Course - Duta Wacana Christian University</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
 
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="visi-misi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Visi dan Misi</h2>
                     <hr class="light">
                     <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
+                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <a href="#" class="btn btn-default btn-xl">Let's Join</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section id="lect-profile">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -155,6 +156,10 @@
                     </div>
                 </div>
             </div>
+            <div class="container text-center" style="padding-top: 10%">
+                <a href="#" class="btn btn-primary btn-xl wow tada">See More</a>
+            </div>
+            <!-- btn btn-default btn-xl wow tada -->
         </div>
     </section>
 
@@ -310,10 +315,10 @@
                         	<a class="page-scroll" href="#page-top">Home</a>
                     	</li>
                     	<li>
-                        	<a class="page-scroll" href="#about">Artikel</a>
+                        	<a class="page-scroll" href="#visi-misi">Artikel</a>
                     	</li>
 	                    <li>
-    	                    <a class="page-scroll" href="#services">Profil</a>
+    	                    <a class="page-scroll" href="#lect-profile">Profil</a>
         	            </li>
             	        <li>
                 	        <a class="page-scroll" href="#portfolio">Artikel</a>

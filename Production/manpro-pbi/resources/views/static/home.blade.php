@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,10 +64,13 @@
                         <a class="page-scroll" href="#lect-profile">Profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Artikel</a>
+                        <a class="page-scroll" href="#program_pelatihan">Program</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Feedback</a>
+                        <a class="page-scroll" href="#portfolio">Publikasi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
                     </li>
                     <li>
                       <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
@@ -85,10 +89,10 @@
 
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Welcome to Our Site</h1>
+                <h1>Selamat datang...</h1>
                 <hr>
-                <p>English Course - Duta Wacana Christian University</p>
-                <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</p>
+                <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">Selanjutnya</a>
             </div>
         </div>
 
@@ -102,7 +106,7 @@
                     <hr class="light">
                     <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
                     <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-default btn-xl">Let's Join</a>
+                    <a href="#" class="btn btn-default btn-xl">Mari Bergabung</a>
                 </div>
             </div>
         </div>
@@ -112,7 +116,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Lecturer Profile</h2>
+                    <h2 class="section-heading">Profil Dosen</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -124,8 +128,8 @@
                         <i class="fa fa-4x wow bounceIn text-primary">
                         	<img class="img-profil img-circle" src="img/profil1.jpg">
                         </i>
-                        <h3>Lecturer 1</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Dosen 1</h3>
+                        <p class="text-muted">Profil singkat bla bla bla</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -133,8 +137,8 @@
                         <i class="fa fa-4x wow bounceIn text-primary">
                         	<img class="img-profil img-circle" src="img/profil2.jpg">
                         </i>
-                        <h3>Lecturer 2</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Dosen 2</h3>
+                        <p class="text-muted">Profil singkat bla bla bla</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -142,8 +146,8 @@
                         <i class="fa fa-4x wow bounceIn text-primary">
                         	<img class="img-profil img-circle" src="img/profil3.jpg">
                         </i>
-                        <h3>Lecturer 3</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>Dosen 3</h3>
+                        <p class="text-muted">Profil singkat bla bla bla</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -151,15 +155,35 @@
                         <i class="fa fa-4x wow bounceIn text-primary">
                         	<img class="img-profil img-circle" src="img/profil1.jpg">
                         </i>
-                        <h3>Lecturer 4</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <h3>Dosen 4</h3>
+                        <p class="text-muted">Profil singkat bla bla bla</p>
                     </div>
                 </div>
             </div>
-            <div class="container text-center" style="padding-top: 10%">
+            <!-- <div class="container text-center" style="padding-top: 10%">
                 <a href="#" class="btn btn-primary btn-xl wow tada">See More</a>
-            </div>
+            </div> -->
             <!-- btn btn-default btn-xl wow tada -->
+        </div>
+    </section>
+
+    <section class="bg-primary" id="program_pelatihan" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Program dan Pelatihan</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -167,7 +191,7 @@
     	<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading" style="padding-top: 10%;">News</h2>
+                    <h2 class="section-heading" style="padding-top: 10%;">Publikasi</h2>
                     <hr class="primary" style="padding-bottom: 4%;">
                 </div>
             </div>
@@ -180,10 +204,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    News Title
+                                    Judul Publikasi
                                 </div>
                                 <div class="project-name">
-                                    Short general description
+                                    Deskripsi singkat
                                 </div>
                             </div>
                         </div>
@@ -194,12 +218,12 @@
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    News Title
-                                </div>
-                                <div class="project-name">
-                                    Short general description
-                                </div>
+                              <div class="project-category text-faded">
+                                  Judul Publikasi
+                              </div>
+                              <div class="project-name">
+                                  Deskripsi singkat
+                              </div>
                             </div>
                         </div>
                     </a>
@@ -209,12 +233,12 @@
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    News Title
-                                </div>
-                                <div class="project-name">
-                                    Short general description
-                                </div>
+                              <div class="project-category text-faded">
+                                  Judul Publikasi
+                              </div>
+                              <div class="project-name">
+                                  Deskripsi singkat
+                              </div>
                             </div>
                         </div>
                     </a>
@@ -224,12 +248,12 @@
                         <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    News Title
-                                </div>
-                                <div class="project-name">
-                                    Short general description
-                                </div>
+                              <div class="project-category text-faded">
+                                  Judul Publikasi
+                              </div>
+                              <div class="project-name">
+                                  Deskripsi singkat
+                              </div>
                             </div>
                         </div>
                     </a>
@@ -239,12 +263,12 @@
                         <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    News Title
-                                </div>
-                                <div class="project-name">
-                                    Short general description
-                                </div>
+                              <div class="project-category text-faded">
+                                  Judul Publikasi
+                              </div>
+                              <div class="project-name">
+                                  Deskripsi singkat
+                              </div>
                             </div>
                         </div>
                     </a>
@@ -254,12 +278,12 @@
                         <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    News Title
-                                </div>
-                                <div class="project-name">
-                                    Short general description
-                                </div>
+                              <div class="project-category text-faded">
+                                  Judul Publikasi
+                              </div>
+                              <div class="project-name">
+                                  Deskripsi singkat
+                              </div>
                             </div>
                         </div>
                     </a>
@@ -272,7 +296,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Want to see all the news?</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">See more!</a>
+                <a href="#" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
             </div>
         </div>
     </aside>
@@ -281,7 +305,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Hubungi Kami</h2>
                     <hr class="primary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
@@ -302,29 +326,29 @@
 			<div class="row">
 				<div class="col-md-6 kiri">
 					<div class="row">
-						<div class="col s3">
+						<div class="col s3" >
 							<a href="/"><img alt="UKDW" class="logo-footer" src="img/logo_ukdw.png"></a>
 						</div>
 					</div>
-					<h5>Need to get out of town? Jumpr is a service that connects riders to drivers with a similar goal - getting to their destination.</h5>
+					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
 				</div>
 				<div class="col-md-6 kanan nav_bawah">
-					<h5>English Course - Duta Wacana Christian university</h5>
+					<h5>Program Studi Pendidikan Bahasa inggris - Universitas Kristen Duta Wacana</h5>
 					<ul>
 						<li>
                         	<a class="page-scroll" href="#page-top">Home</a>
                     	</li>
                     	<li>
-                        	<a class="page-scroll" href="#visi-misi">Artikel</a>
+                        	<a class="page-scroll" href="#visi-misi">Visi Misi</a>
                     	</li>
 	                    <li>
     	                    <a class="page-scroll" href="#lect-profile">Profil</a>
         	            </li>
             	        <li>
-                	        <a class="page-scroll" href="#portfolio">Artikel</a>
+                	        <a class="page-scroll" href="#portfolio">Publikasi</a>
                     	</li>
                     	<li>
-                        	<a class="page-scroll" href="#contact">Feedback</a>
+                        	<a class="page-scroll" href="#contact">Hubungi Kami</a>
                     	</li>
 					</ul>
 				</div>

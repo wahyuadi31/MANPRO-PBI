@@ -38,17 +38,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Slider -->
-    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="./js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-        $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
+    <!-- Slider -->
+    <link rel="stylesheet" href="/css/default.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 
 
 
@@ -217,12 +213,10 @@
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-                        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+
                         <script type="text/javascript">
-                        $(window).load(function(){
-                        $(window).load(function(){
-                            $('#slider').nivoSlider();
+                        jQuery(document).ready(function($) {
+                              $('#slidder').nivoSlider();
                         });
                         </script>
                     </div>

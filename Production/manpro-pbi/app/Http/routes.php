@@ -13,14 +13,12 @@
 
 Route::get('/','Pages@index');
 
-Route::get('artikel','Pages@articles');
+Route::get('publication','PublicationController@index');
 
 Route::controllers([
  'auth' => 'Auth\AuthController',
  'password' => 'Auth\PasswordController',
 ]);
-
-//Route::get('/{slug}',['as' => 'post', 'uses' => 'PostController@show'])->where('slug', '[A-Za-z0-9-_]+');
 
 Route::get('/test',function(){
   return view('static.home-layouted');

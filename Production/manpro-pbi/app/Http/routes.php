@@ -11,21 +11,34 @@
 |
 */
 
-Route::get('/','Pages@index');
+/*
+  Index pages routes
+*/
+Route::get('/','HomeController@index');
 
-Route::get('publication','PublicationController@index');
+Route::get('/home', 'HomeController@index');
 
+Route::get ('/admin', 'AdminController@index');
+
+/*
+  publications download and routes
+*/
+
+Route::get('/publication','PublicationController@index');
+Route::get('/publication/{slug}','PublicationController@show');
+/*
+  Authentications
+*/
 Route::controllers([
  'auth' => 'Auth\AuthController',
  'password' => 'Auth\PasswordController',
 ]);
 
+Route::auth();
+
+/*
+  tests routes
+*/
 Route::get('/test',function(){
   return view('static.home-layouted');
 });
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
-
-Route::get ('/admin', 'AdminController@index');

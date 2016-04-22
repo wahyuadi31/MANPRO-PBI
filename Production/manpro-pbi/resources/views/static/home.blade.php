@@ -25,13 +25,35 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/">
 
+    <!-- css Nivo slider-->
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/default.css" type="text/css" media = "screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Slider -->
+    <link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="./js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+
+
+
+
 
 </head>
 
@@ -173,15 +195,37 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Program dan Pelatihan</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                    <div id="wrapper">
+                        <div class="slider-wrapper theme-default">
+                            <div id="slidder" class="nivoSlider">
+                                <img src="img/happy.jpg" data-thumb="img/happy.jpg" alt=""/>
+                                <a href ="#"><img src="img/home.jpg" data-thumb="img/home.jpg" alt="" title="example 1">
+                                <img src="img/international.jpg" data-thumb="img/international.jpg" alt=""/>
+                                <a href ="#"><img src="img/teacher.jpg" data-thumb="img/teacher.jpg" alt="" title="example 2">
+                            </div>
+                            <div id="htmlcaption" class="nivo-html-caption">
+                                <div>
+                                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                                </div>
+                                <div class="col-lg-4 col-lg-offset-2 text-center">
+                                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                                    <p>123-456-6789</p>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+                        <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+                        <script type="text/javascript">
+                        $(window).load(function(){
+                        $(window).load(function(){
+                            $('#slider').nivoSlider();
+                        });
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>

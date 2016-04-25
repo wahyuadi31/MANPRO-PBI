@@ -20,10 +20,7 @@ class Publication extends Migration
             ->references('id')->on('users')
             ->onDelete('cascade');
         $table->string('title')->unique();
-        $table->string('abstract');
-        $table->string('mime');
-        $table->string('originalFilename')->unique();
-        $table->string('Filename')->unique();
+        $table->string('shortDesc');
         $table->string('slug')->unique();
         $table->text('body');
         $table->timestamps();

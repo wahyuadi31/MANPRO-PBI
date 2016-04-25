@@ -122,24 +122,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-    </p>
     @yield('title')
     @yield('content')
     <section id="contact" >

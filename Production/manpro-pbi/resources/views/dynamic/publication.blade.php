@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app').
 @section('content')
 
 <div class="all-news">
@@ -14,7 +14,7 @@
           <div></div>
           <div class="col-md-6 offset-m2 valign jarak-kanan">
             <h2>{{$pub->title}}</h2>
-            <p>{{$pub->abstract}}</p>
+            <p>{{$pub->shortDesc}}</p>
             </div>
 
           </div>

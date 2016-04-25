@@ -11,20 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UsersTableSeeder::class);
-        $this->command->info('User table seeded!');
+        // $this->call(UsersTableSeeder::class);
     }
-}
-
-/**
- *
- */
-class UsersTableSeeder extends Seeder
-{
-  function __construct(){
-
-  }
-  public function run(){
-      Users::create(['email' => 'foo@bar.com']);
-  }
 }

@@ -15,9 +15,10 @@
   Index pages routes
 */
 Route::get('/','HomeController@index');
+
 Route::get('/home', 'HomeController@index');
+
 Route::get ('/admin', 'AdminController@index');
-Route::get('/admin/makePublication', 'PublicationController@create');
 
 /*
   publications download and routes
@@ -25,7 +26,6 @@ Route::get('/admin/makePublication', 'PublicationController@create');
 
 Route::get('/publication','PublicationController@index');
 Route::get('/publication/{slug}','PublicationController@show');
-Route::get('publication/download/{slug}','PublicationController@download');
 /*
   Authentications
 */

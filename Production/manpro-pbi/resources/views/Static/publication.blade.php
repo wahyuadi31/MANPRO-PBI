@@ -18,7 +18,7 @@
           <div></div>
           <div class="col-md-6 offset-m2 valign jarak-kanan">
             <h2>{{$content->title}}</h2>
-            <p>{{$content->abstract}}</p>
+            <p>{{$content->shortDesc}}</p>
 
               <a href=" {{url('/publication', $content->slug) }}" class="btn btn-default btn-xl wow tada col-xs-6 col-centered col-min">Read ...</a>
 

@@ -520,6 +520,9 @@ footer, .kanan ul li a{
     padding-top: 1%;
     padding-bottom: 1%;
 }
+footer{
+    height: auto;
+}
 footer .container h5{
     line-height: 190%;
     padding-bottom: 0px;

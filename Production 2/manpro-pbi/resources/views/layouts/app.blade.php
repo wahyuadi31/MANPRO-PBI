@@ -99,16 +99,19 @@
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Visi Misi</a>
+                        <a class="page-scroll" href="#visi-misi">Visi Misi</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Profil</a>
+                        <a class="page-scroll" href="#lect-profile">Profil</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Artikel</a>
+                        <a class="page-scroll" href="#program_pelatihan">Program</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Feedback</a>
+                        <a class="page-scroll" href="#portfolio">Publikasi</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
                     </li>
                     <li>
                       <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
@@ -129,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <h2 class="section-heading">Hubungi Kami</h2>
                     <hr class="primary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
@@ -157,23 +160,25 @@
           <h5>Need to get out of town? Jumpr is a service that connects riders to drivers with a similar goal - getting to their destination.</h5>
         </div>
         <div class="col-md-6 kanan nav_bawah">
-          <h5>English Course - Duta Wacana Christian university</h5>
+          <h5>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</h5>
           <ul>
             <li>
-                          <a class="page-scroll" href="#page-top">Home</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#about">Artikel</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#services">Profil</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#portfolio">Artikel</a>
-                      </li>
-                      <li>
-                          <a class="page-scroll" href="#contact">Feedback</a>
-                      </li>
+                  <a class="page-scroll" href="#page-top">Home</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#visi-misi">Visi Misi</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#lect-profile">Profil</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#program_pelatihan">Program</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#portfolio">Publikasi</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#contact">Hubungi Kami</a>
           </ul>
         </div>
       </div>

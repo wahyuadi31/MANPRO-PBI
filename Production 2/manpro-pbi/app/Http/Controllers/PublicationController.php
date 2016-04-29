@@ -24,10 +24,20 @@ class PublicationController extends Controller
       return response()->download($file);
     }
 
+    public function create()
+    {
+      $user
+    }
+
     public function show($slug)
     {
       $pub = Publication::where('slug',$slug)->first();
 
       return view('dynamic.publication')->with('pub', $pub);
+    }
+
+    public function aa()
+    {
+      return 'streing';
     }
 }

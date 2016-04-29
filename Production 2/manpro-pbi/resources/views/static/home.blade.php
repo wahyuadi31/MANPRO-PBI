@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="bg-primary" id="program_pelatihan" >
+    <section id="program_pelatihan" style="height: 120%; background-color: #EDEDED">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -194,23 +194,20 @@
                     <div id="wrapper">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
-                                <img src="img/happy.jpg" data-thumb="img/happy.jpg" alt=""/>
-                                <a href ="#"><img src="img/home.jpg" data-thumb="img/home.jpg" alt="" title="example 1">
-                                <img src="img/international.jpg" data-thumb="img/international.jpg" alt=""/>
-                                <a href ="#"><img src="img/teacher.jpg" data-thumb="img/teacher.jpg" alt="" title="example 2">
+                                <a href="img/1.jpg">
+                                  <img src="img/1.jpg" data-thumb="img/1.jpg" alt="" title="Program Pelatihan 1"/>
+                                </a>
+                                <a href="img/2.jpg">
+                                  <img src="img/2.jpg" data-thumb="img/2.jpg" alt="" title="Program Pelatihan 2">
+                                </a>
+                                <a href="img/3.jpg"
+                                  <img src="img/3.jpg" data-thumb="img/3.jpg" alt="" title="Program Pelatihan 3"/>
+                                </a>
+                                <a href="img/4.jpg">
+                                  <img src="img/4.jpg" data-thumb="img/4.jpg" alt="" title="Program Pelatihan 4">
+                                </a>
                             </div>
                             <div id="htmlcaption" class="nivo-html-caption">
-                                <div>
-                                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                                </div>
-                                <div class="col-lg-4 col-lg-offset-2 text-center">
-                                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                                    <p>123-456-6789</p>
-                                </div>
-                                <div class="col-lg-4 text-center">
-                                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                                </div>
                             </div>
                         </div>
 
@@ -225,7 +222,7 @@
         </div>
     </section>
 
-    <section class="no-padding bg-dark" id="portfolio">
+    <section class="no-padding bg-dark" id="portfolio" style="height: 150%">
     	<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -327,19 +324,21 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
+        </div>
+        <div class="bg-dark container text-center col-md-4" style="width:100%; height:auto; padding-top:5%; padding-bottom: 5%">
             <div class="call-to-action">
-                <h2>Want to see all the news?</h2>
+                <!-- <h2>Want to see all the news?</h2> -->
                 <a href="#" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
             </div>
         </div>
-    </aside>
+    </section>
 
-    <section id="contact" >
+    <!-- <aside class="bg-dark"> -->
+
+    <!-- </aside> -->
+
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -359,7 +358,7 @@
         </div>
     </section>
 
-    <footer class="page-footer" style="background-color: #F05F40">
+    <footer class="page-footer" style="background-color: #F05F40;">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 kiri">
@@ -371,31 +370,37 @@
 					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
 				</div>
 				<div class="col-md-6 kanan nav_bawah">
-					<h5>Program Studi Pendidikan Bahasa inggris - Universitas Kristen Duta Wacana</h5>
+					<h5>
+            <strong>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</strong> 
+          </h5>
 					<ul>
-						<li>
-                        	<a class="page-scroll" href="#page-top">Home</a>
-                    	</li>
-                    	<li>
-                        	<a class="page-scroll" href="#visi-misi">Visi Misi</a>
-                    	</li>
-	                    <li>
-    	                    <a class="page-scroll" href="#lect-profile">Profil</a>
-        	            </li>
-            	        <li>
-                	        <a class="page-scroll" href="#portfolio">Publikasi</a>
-                    	</li>
-                    	<li>
-                        	<a class="page-scroll" href="#contact">Hubungi Kami</a>
-                    	</li>
+              <li>
+                  <a class="page-scroll" href="#page-top">Home</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#visi-misi">Visi Misi</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#lect-profile">Profil</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#program_pelatihan">Program</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#portfolio">Publikasi</a>
+              </li>
+              <li>
+                  <a class="page-scroll" href="#contact">Hubungi Kami</a>
+              </li>
 					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="footer-copyright">
-			<div class="container kiri">© 2016 Re-PG.<span class="it_kanan">IT Project Management</span></div>
-		</div>
+
 	</footer>
+  <div class="footer-copyright">
+    <div class="container kiri">© 2016 Re-PG.<span class="it_kanan">IT Project Management</span></div>
+  </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

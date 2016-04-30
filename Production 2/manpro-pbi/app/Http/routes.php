@@ -15,7 +15,11 @@
   Index pages routes
 */
 Route::get('/','HomeController@index');
-Route::get('/home', 'HomeController@index');
+Route::get('/home', [
+  'as' => 'home',
+  'uses' =>'HomeController@index'
+]);
+Route::get('/home{section}','HomeController@index');
 Route::get ('/admin', 'AdminController@index');
 Route::get('/admin/makePublication', 'PublicationController@create');
 

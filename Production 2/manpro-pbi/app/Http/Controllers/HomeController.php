@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests;
 use Illuminate\Http\Request;
+use View;
+use Redirect;
 
 class HomeController extends Controller
 {
@@ -14,6 +16,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Static.home');
+      if(!isset($section)){
+        $section = "#welcome";
+      }
+      return View::make('Static.home')->with('scroll','$section');
+      //return view('Static.home');
+    }
+    public function hashtag($section)
+    {
+      return Redirect::to(route('home').$section)->with('scroll',$section);
     }
 }

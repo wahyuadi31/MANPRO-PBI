@@ -20,9 +20,13 @@ Route::get('/home', [
   'uses' =>'HomeController@index'
 ]);
 Route::get('/home{section}','HomeController@index');
-Route::get ('/admin', 'AdminController@index');
-Route::get('/admin/makePublication', 'PublicationController@create');
 
+/*
+  admins routes and it's derivative
+*/
+Route::get ('/admin', 'AdminController@index');
+Route::get('/admin/publication/create', 'AdminController@createPublication');
+Route::post('/admin/publication', 'AdminController@storePublication');
 /*
   publications download and routes
 */

@@ -18,9 +18,13 @@ class Publication extends Model
     protected $fillable =[
       'author_id',
       'title',
-      'shortDesc',
+      'abstract',
       'slug',
-      'body'
+      'body',
+      'created_at',
+      'updated_at',
+      'originalFilename'
+      'mime'
     ];
 
     // returns the instance of the user who is author of that post

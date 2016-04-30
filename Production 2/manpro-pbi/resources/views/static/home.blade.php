@@ -339,7 +339,7 @@
         <div class="bg-dark container text-center col-md-4" style="width:100%; height:auto; padding-top:5%; padding-bottom: 5%">
             <div class="call-to-action">
                 <!-- <h2>Want to see all the news?</h2> -->
-                <a href="#" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
+                <a href="/publication" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
             </div>
         </div>
     </section>

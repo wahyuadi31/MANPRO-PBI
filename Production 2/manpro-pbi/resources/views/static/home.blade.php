@@ -46,11 +46,23 @@
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
 
-
-
-
-
-
+    <script type="text/javascript">
+    (function ($) {
+        $(document).ready(function() {
+          if (typeof window.location.hash !== 'undefined') {
+            $("html, body").animate({ scrollTop: $({{ $scroll }}).offset().top }, 1000);
+          }
+        });
+    })(jQuery);
+    /*
+      id isi page :
+      header : 'welcome'
+      visi misi : 'visi-misi'
+      profil : 'lect-profile'
+      program : 'program-pelatihan'
+      publikasi :'portfolio'
+    */
+    </script>
 </head>
 
 <body id="page-top">
@@ -103,8 +115,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header>
-
+    <header id="welcome">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Selamat datang...</h1>
@@ -113,7 +124,6 @@
                 <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">Selanjutnya</a>
             </div>
         </div>
-
     </header>
 
     <section class="bg-primary" id="visi-misi">
@@ -329,7 +339,7 @@
         <div class="bg-dark container text-center col-md-4" style="width:100%; height:auto; padding-top:5%; padding-bottom: 5%">
             <div class="call-to-action">
                 <!-- <h2>Want to see all the news?</h2> -->
-                <a href="#" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
+                <a href="/publication" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
             </div>
         </div>
     </section>

@@ -19,7 +19,7 @@ class HomeController extends Controller
       if(!isset($section)){
         $section = "#welcome";
       }
-      return View::make('Static.home')->with('scroll','$section');
+      return View::make('static.home')->with('scroll','$section');
       //return view('Static.home');
     }
     public function hashtag($section)

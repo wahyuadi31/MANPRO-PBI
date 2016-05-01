@@ -38,7 +38,7 @@
               </li>
       <br/><br/>
       <li>
-          <a href="#">LOG OUT</a>
+          <a href="{{Auth::logout()}}">LOG OUT</a>
       </li>
           </ul>
       </div>

@@ -2908,6 +2908,7 @@
         "description": "Allows installation of Components via Composer."
     },
     {
+<<<<<<< HEAD
         "name": "vlucas/phpdotenv",
         "version": "v2.2.1",
         "version_normalized": "2.2.1.0",
@@ -2934,15 +2935,48 @@
             "branch-alias": {
                 "dev-master": "2.2-dev"
             }
+=======
+        "name": "fzaninotto/faker",
+        "version": "v1.6.0",
+        "version_normalized": "1.6.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/fzaninotto/Faker.git",
+            "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+            "reference": "44f9a286a04b80c76a4e5fb7aad8bb539b920123",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.3.3|^7.0"
+        },
+        "require-dev": {
+            "ext-intl": "*",
+            "phpunit/phpunit": "~4.0",
+            "squizlabs/php_codesniffer": "~1.5"
+        },
+        "time": "2016-04-29 12:21:54",
+        "type": "library",
+        "extra": {
+            "branch-alias": []
+>>>>>>> c569c2b23d98b0279c6686ed7f76e848ce9ef3ea
         },
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
+<<<<<<< HEAD
                 "Dotenv\\": "src/"
+=======
+                "Faker\\": "src/Faker/"
+>>>>>>> c569c2b23d98b0279c6686ed7f76e848ce9ef3ea
             }
         },
         "notification-url": "https://packagist.org/downloads/",
         "license": [
+<<<<<<< HEAD
             "BSD-3-Clause-Attribution"
         ],
         "authors": [
@@ -2957,6 +2991,20 @@
             "dotenv",
             "env",
             "environment"
+=======
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "François Zaninotto"
+            }
+        ],
+        "description": "Faker is a PHP library that generates fake data for you.",
+        "keywords": [
+            "data",
+            "faker",
+            "fixtures"
+>>>>>>> c569c2b23d98b0279c6686ed7f76e848ce9ef3ea
         ]
     },
     {
@@ -3045,6 +3093,61 @@
         ]
     },
     {
+<<<<<<< HEAD
+=======
+        "name": "vlucas/phpdotenv",
+        "version": "v2.2.1",
+        "version_normalized": "2.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/vlucas/phpdotenv.git",
+            "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/63f37b9395e8041cd4313129c08ece896d06ca8e",
+            "reference": "63f37b9395e8041cd4313129c08ece896d06ca8e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8 || ^5.0"
+        },
+        "time": "2016-04-15 10:48:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.2-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Dotenv\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause-Attribution"
+        ],
+        "authors": [
+            {
+                "name": "Vance Lucas",
+                "email": "vance@vancelucas.com",
+                "homepage": "http://www.vancelucas.com"
+            }
+        ],
+        "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+        "keywords": [
+            "dotenv",
+            "env",
+            "environment"
+        ]
+    },
+    {
+>>>>>>> c569c2b23d98b0279c6686ed7f76e848ce9ef3ea
         "name": "laravel/framework",
         "version": "v5.2.31",
         "version_normalized": "5.2.31.0",
@@ -3224,6 +3327,7 @@
         ]
     },
     {
+<<<<<<< HEAD
         "name": "fzaninotto/faker",
         "version": "v1.6.0",
         "version_normalized": "1.6.0.0",
@@ -3274,6 +3378,8 @@
         ]
     },
     {
+=======
+>>>>>>> c569c2b23d98b0279c6686ed7f76e848ce9ef3ea
         "name": "laravelcollective/html",
         "version": "v5.2.4",
         "version_normalized": "5.2.4.0",

@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
 
     <meta charset="utf-8">
@@ -10,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Universitas Kristen Duta Wacana - Pendidikan Bahasa Inggris</title>
+    <title>{!! Lang::get('home.title') !!}</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -78,29 +76,29 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo-01.png" width="250px" style="margin-top: -50px"></a> -->
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/header.png" width="30px" id="logo_header">Pendidikan Bahasa Inggris</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/header.png" width="30px" id="logo_header">{!! Lang::get('home.shorttitle') !!}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                 	<li>
-                        <a class="page-scroll" href="#page-top">Home</a>
+                        <a class="page-scroll" href="#page-top">{!! Lang::get('home.home') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#visi-misi">Visi Misi</a>
+                        <a class="page-scroll" href="#visi-misi">{!! Lang::get('home.visiMisi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#lect-profile">Profil</a>
+                        <a class="page-scroll" href="#lect-profile">{!! Lang::get('home.profil') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#program_pelatihan">Program</a>
+                        <a class="page-scroll" href="#program_pelatihan">{!! Lang::get('home.program') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Publikasi</a>
+                        <a class="page-scroll" href="#portfolio">{!! Lang::get('home.publikasi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                        <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
                     </li>
                     <li>
                       <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
@@ -118,10 +116,10 @@
     <header id="welcome">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Selamat datang...</h1>
+                <h1>{!! Lang::get('home.welcome') !!}</h1>
                 <hr>
-                <p>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</p>
-                <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">Selanjutnya</a>
+                <p>{!! Lang::get('home.title2') !!}</p>
+                <a href="#visi-misi" class="btn btn-primary btn-xl page-scroll">{!! Lang::get('home.selanjutnya') !!}</a>
             </div>
         </div>
     </header>
@@ -130,11 +128,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Visi dan Misi</h2>
+                    <h2 class="section-heading">{!! Lang::get('home.visiMisi') !!}</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <p class="text-faded">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <a href="#" class="btn btn-default btn-xl">Mari Bergabung</a>
+                    <p class="text-faded">{!! Lang::get('home.visi') !!}</p>
+                    <p class="text-faded">{!! Lang::get('home.misi') !!}</p>
+                    <a href="#" class="btn btn-default btn-xl">{!! Lang::get('home.join') !!}</a>
                 </div>
             </div>
         </div>
@@ -144,7 +142,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Profil Dosen</h2>
+                    <h2 class="section-heading">{!! Lang::get('home.profile') !!}</h2>
                     <hr class="primary">
                 </div>
             </div>
@@ -199,7 +197,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Program dan Pelatihan</h2>
+                    <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
                     <hr class="primary">
                     <div id="wrapper">
                         <div class="slider-wrapper theme-default">
@@ -236,7 +234,7 @@
     	<div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading" style="padding-top: 10%;">Publikasi</h2>
+                    <h2 class="section-heading" style="padding-top: 10%;">{!! Lang::get('home.publikasi') !!}</h2>
                     <hr class="primary" style="padding-bottom: 4%;">
                 </div>
             </div>
@@ -339,7 +337,7 @@
         <div class="bg-dark container text-center col-md-4" style="width:100%; height:auto; padding-top:5%; padding-bottom: 5%">
             <div class="call-to-action">
                 <!-- <h2>Want to see all the news?</h2> -->
-                <a href="/publication" class="btn btn-default btn-xl wow tada">Lihat Selengkapnya</a>
+                <a href="/publication" class="btn btn-default btn-xl wow tada">{!! Lang::get('home.selengkapnya') !!}</a>
             </div>
         </div>
     </section>
@@ -352,7 +350,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Hubungi Kami</h2>
+                    <h2 class="section-heading">{!! Lang::get('home.kontak') !!}</h2>
                     <hr class="primary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
@@ -381,26 +379,26 @@
 				</div>
 				<div class="col-md-6 kanan nav_bawah">
 					<h5>
-            <strong>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</strong>
+            <strong>{!! Lang::get('home.title2') !!}</strong>
           </h5>
 					<ul>
               <li>
-                  <a class="page-scroll" href="#page-top">Home</a>
+                  <a class="page-scroll" href="#page-top">{!! Lang::get('home.home') !!}</a>
               </li>
               <li>
-                  <a class="page-scroll" href="#visi-misi">Visi Misi</a>
+                  <a class="page-scroll" href="#visi-misi">{!! Lang::get('home.visiMisi') !!}</a>
               </li>
               <li>
-                  <a class="page-scroll" href="#lect-profile">Profil</a>
+                  <a class="page-scroll" href="#lect-profile">{!! Lang::get('home.profil') !!}</a>
               </li>
               <li>
-                  <a class="page-scroll" href="#program_pelatihan">Program</a>
+                  <a class="page-scroll" href="#program_pelatihan">{!! Lang::get('home.program') !!}</a>
               </li>
               <li>
-                  <a class="page-scroll" href="#portfolio">Publikasi</a>
+                  <a class="page-scroll" href="#portfolio">{!! Lang::get('home.publikasi') !!}</a>
               </li>
               <li>
-                  <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                  <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
               </li>
 					</ul>
 				</div>

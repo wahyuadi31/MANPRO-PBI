@@ -66,6 +66,10 @@
 </head>
 
 <body id="page-top">
+  @if(Auth::user()){
+    {{Auth::logout()}}
+  }
+  @endif
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">

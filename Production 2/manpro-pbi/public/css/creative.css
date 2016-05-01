@@ -534,3 +534,12 @@ footer .container h5{
     width: 100px;
     height: 100px;
 }
+
+table tr td{
+  padding-bottom: 5%;
+  vertical-align: top;
+}
+#btn-publish{
+  padding-top: 5%;
+  text-align: right;
+}

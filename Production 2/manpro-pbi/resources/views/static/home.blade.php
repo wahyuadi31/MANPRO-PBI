@@ -371,7 +371,7 @@
 				</div>
 				<div class="col-md-6 kanan nav_bawah">
 					<h5>
-            <strong>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</strong> 
+            <strong>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</strong>
           </h5>
 					<ul>
               <li>

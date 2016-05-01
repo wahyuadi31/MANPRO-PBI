@@ -183,10 +183,11 @@
         </div>
       </div>
     </div>
+
+    </footer>
     <div class="footer-copyright">
       <div class="container kiri">© 2016 Re-PG.<span class="it_kanan">IT Project Management</span></div>
     </div>
-    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

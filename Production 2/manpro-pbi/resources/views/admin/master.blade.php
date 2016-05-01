@@ -7,11 +7,14 @@
 <title>Dashboard Admin</title>
 <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href={{asset('css/styles.css')}}>
+<link rel="stylesheet" href={{asset('css/creative.css')}}>
 <link rel="stylesheet" href={{asset('css/bootstrap.min.css')}}>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="wrapper">
+
 
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
@@ -25,13 +28,13 @@
               </li>
       <br/><br/><br/>
               <li>
-                  <a href="Dashboard_Article.php">ARTICLE</a>
+                  <a href="#" id="article">ARTICLE</a>
               </li>
               <li>
-                  <a href="Dashboard_Publish.php">PUBLISH</a>
+                  <a href="#" id="publish">PUBLISH</a>
               </li>
               <li>
-                  <a href="Dashboard_User.php">USER</a>
+                  <a href="#" id="user">USER</a>
               </li>
       <br/><br/>
       <li>
@@ -60,10 +63,34 @@
 
 <!-- Menu Toggle Script -->
 <script>
-$("#menu-toggle").click(function(e) {
-  e.preventDefault();
-  $("#wrapper").toggleClass("toggled");
-});
+
+$(document).ready(function(){
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+  });
+
+  $("#publish-content").hide();
+  $("#user-content").hide();
+
+  $("#article").click(function(){
+    $("#article-content").show();
+    $("#publish-content").hide();
+    $("#user-content").hide();
+  });
+
+  $("#publish").click(function(){
+    $("#article-content").hide();
+    $("#publish-content").show();
+    $("#user-content").hide();
+  });
+
+  $("#user").click(function(){
+    $("#article-content").hide();
+    $("#publish-content").hide();
+    $("#user-content").show();
+  });
+ });
 </script>
 
 </body>

@@ -22,6 +22,10 @@ Route::get('/home', [
 Route::get('/home{section}','HomeController@index');
 
 /*
+  Langua
+*/
+Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+/*
   admins routes and it's derivative
 */
 Route::get ('/admin', 'AdminController@index');

@@ -12,7 +12,7 @@
         <div class="row hide-on-small-only valign-wrapper">
           <div class="col-md-6">
             <div class="mockup jarak-kiri">
-              <img class="responsive-img" src="img/portfolio/1.jpg" style="width: 100%; height: 100%" alt="Discover mockup">
+              <img class="responsive-img" src="/img/portfolio/1.jpg" style="width: 100%; height: 100%" alt="Discover mockup">
             </div>
           </div>
           <div></div>
@@ -20,7 +20,7 @@
             <h2>{{$content->title}}</h2>
             <p>{{$content->shortDesc}}</p>
 
-              <a href=" {{url('/publication', $content->slug) }}" class="btn btn-default btn-xl wow tada col-xs-6 col-centered col-min">Read ...</a>
+              <a href=" {{url('/publication', $content->slug) }}" class="btn btn-default btn-xl wow tada col-xs-6 col-centered col-min">{{ Lang::get('publication.baca') }}</a>
 
             </div>
 

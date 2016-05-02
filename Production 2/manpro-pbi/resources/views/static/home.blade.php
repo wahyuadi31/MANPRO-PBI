@@ -11,24 +11,24 @@
     <title>{!! Lang::get('home.title') !!}</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/">
+    <link rel="stylesheet" href="/css/creative.css" type="text/css">
+    <link rel="stylesheet" href="/css/">
 
     <!-- css Nivo slider-->
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="css/default.css" type="text/css" media = "screen">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/css/nivo-slider.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="/css/default.css" type="text/css" media = "screen">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,8 +41,8 @@
 
     <!-- Slider -->
     <link rel="stylesheet" href="/css/default.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript" src="/js/jquery.nivo.slider.pack.js"></script>
 
     <script type="text/javascript">
     (function ($) {
@@ -80,7 +80,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo-01.png" width="250px" style="margin-top: -50px"></a> -->
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/header.png" width="30px" id="logo_header">{!! Lang::get('home.shorttitle') !!}</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/header.png" width="30px" id="logo_header">{!! Lang::get('home.shorttitle') !!}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -105,10 +105,10 @@
                         <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
                     </li>
                     <li>
-                      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
+                      <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
                     </li>
                     <li>
-                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
+                        <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
                     </li>
                 </ul>
             </div>
@@ -156,7 +156,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary">
-                        	<img class="img-profil img-circle" src="img/profil1.jpg">
+                        	<img class="img-profil img-circle" src="/img/profil1.jpg">
                         </i>
                         <h3>Dosen 1</h3>
                         <p class="text-muted">Profil singkat bla bla bla</p>
@@ -165,7 +165,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary">
-                        	<img class="img-profil img-circle" src="img/profil2.jpg">
+                        	<img class="img-profil img-circle" src="/img/profil2.jpg">
                         </i>
                         <h3>Dosen 2</h3>
                         <p class="text-muted">Profil singkat bla bla bla</p>
@@ -174,7 +174,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary">
-                        	<img class="img-profil img-circle" src="img/profil3.jpg">
+                        	<img class="img-profil img-circle" src="/img/profil3.jpg">
                         </i>
                         <h3>Dosen 3</h3>
                         <p class="text-muted">Profil singkat bla bla bla</p>
@@ -183,7 +183,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary">
-                        	<img class="img-profil img-circle" src="img/profil1.jpg">
+                        	<img class="img-profil img-circle" src="/img/profil1.jpg">
                         </i>
                         <h3>Dosen 4</h3>
                         <p class="text-muted">Profil singkat bla bla bla</p>
@@ -206,17 +206,17 @@
                     <div id="wrapper">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
-                                <a href="img/1.jpg">
-                                  <img src="img/1.jpg" data-thumb="img/1.jpg" alt="" title="Program Pelatihan 1"/>
+                                <a href="/img/1.jpg">
+                                  <img src="/img/1.jpg" data-thumb="img/1.jpg" alt="" title="Program Pelatihan 1"/>
                                 </a>
-                                <a href="img/2.jpg">
-                                  <img src="img/2.jpg" data-thumb="img/2.jpg" alt="" title="Program Pelatihan 2">
+                                <a href="/img/2.jpg">
+                                  <img src="/img/2.jpg" data-thumb="img/2.jpg" alt="" title="Program Pelatihan 2">
                                 </a>
-                                <a href="img/3.jpg"
-                                  <img src="img/3.jpg" data-thumb="img/3.jpg" alt="" title="Program Pelatihan 3"/>
+                                <a href="/img/3.jpg"
+                                  <img src="/img/3.jpg" data-thumb="img/3.jpg" alt="" title="Program Pelatihan 3"/>
                                 </a>
-                                <a href="img/4.jpg">
-                                  <img src="img/4.jpg" data-thumb="img/4.jpg" alt="" title="Program Pelatihan 4">
+                                <a href="/img/4.jpg">
+                                  <img src="/img/4.jpg" data-thumb="img/4.jpg" alt="" title="Program Pelatihan 4">
                                 </a>
                             </div>
                             <div id="htmlcaption" class="nivo-html-caption">
@@ -247,7 +247,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -262,7 +262,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -277,7 +277,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -292,7 +292,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -307,7 +307,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -322,7 +322,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <img src="/img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -376,7 +376,7 @@
 				<div class="col-md-6 kiri">
 					<div class="row">
 						<div class="col s3" >
-							<a href="/"><img alt="UKDW" class="logo-footer" src="img/logo_ukdw.png"></a>
+							<a href="/"><img alt="UKDW" class="logo-footer" src="/img/logo_ukdw.png"></a>
 						</div>
 					</div>
 					<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h5>
@@ -415,18 +415,18 @@
   </div>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
+    <script src="/js/wow.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="/js/creative.js"></script>
 
 </body>
 

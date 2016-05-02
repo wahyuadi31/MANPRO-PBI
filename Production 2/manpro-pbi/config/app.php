@@ -65,8 +65,9 @@ return [
     |
     */
 
-    'locale' => 'id',
+    'locale' => 'en',
     'locales' => ['en' => 'English', 'id' => 'Bahasa'],
+    'skip_locales' =>   ['admin', 'login', 'register'],
 
     /*
     |--------------------------------------------------------------------------

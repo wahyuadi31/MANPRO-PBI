@@ -36,6 +36,17 @@ Route::get('/admin/logout', [
   'uses' => 'AdminController@getLogout',
   'as' => 'admin.logout'
 ]);
+
+Route::get('/admin/data_dosen', [
+  'uses' => 'AdminController@getDataDosen',
+  'as' => 'data_dosen'
+]);
+
+
+Route::post('/admin/tambah_dosen', [
+  'uses' => 'AdminController@tambahDosen',
+  'as' => 'tambah_dosen'
+]);
 /*
   publications download and routes
 */

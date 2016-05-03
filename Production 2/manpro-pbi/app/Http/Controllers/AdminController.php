@@ -12,7 +12,6 @@ class AdminController extends Controller
        $this->middleware('auth');
     }
 
-    //
     public function index(){
       return view('admin.article');
     }
@@ -27,7 +26,13 @@ class AdminController extends Controller
         $input = Request::all();
         $input['created_at'] = Carbon::now();
         $input['updated_at'] = Carbon::now();
+        $input['slug'] = Carbon::now()->year();
 
         return $input;
+    }
+
+    public function getLogout(){
+     auth()->guard()->logout();
+     return redirect()->route('home');
     }
 }

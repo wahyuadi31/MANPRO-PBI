@@ -38,7 +38,7 @@
               </li>
       <br/><br/>
       <li>
-          <a href="#">LOG OUT</a>
+          <a href="{{ url('admin/logout') }}">LOG OUT</a>
       </li>
           </ul>
       </div>

@@ -8,21 +8,21 @@
       <meta name="description" content="">
       <meta name="author" content="">
 
-      <title>Universitas Kristen Duta Wacana - Pendidikan Bahasa Inggris</title>
+      <title>{{ Lang::get('Home.title') }}</title>
 
       <!-- Bootstrap Core CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
 
       <!-- Custom Fonts -->
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+      <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
 
       <!-- Plugin CSS -->
-      <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+      <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
 
       <!-- Custom CSS -->
-      <link rel="stylesheet" href="css/creative.css" type="text/css">
+      <link rel="stylesheet" href="/css/creative.css" type="text/css">
 
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -89,35 +89,35 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!-- <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo-01.png" width="250px" style="margin-top: -50px"></a> -->
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/header.png" width="30px" id="logo_header">Pendidikan Bahasa Inggris</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/header.png" width="30px" id="logo_header">{!! Lang::get('publication.shorttitle') !!}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                	<li>
-                        <a class="page-scroll" href="#page-top">Home</a>
+                  <li>
+                        <a class="page-scroll" href="#page-top">{!! Lang::get('home.home') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#visi-misi">Visi Misi</a>
+                        <a class="page-scroll" href="#visi-misi">{!! Lang::get('home.visiMisi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#lect-profile">Profil</a>
+                        <a class="page-scroll" href="#lect-profile">{!! Lang::get('home.profil') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#program_pelatihan">Program</a>
+                        <a class="page-scroll" href="#program_pelatihan">{!! Lang::get('home.program') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Publikasi</a>
+                        <a class="page-scroll" href="#portfolio">{!! Lang::get('home.publikasi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                        <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
                     </li>
                     <li>
-                      <a class="navbar-brand page-scroll" href="#page-top"><img src="img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
+                      <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
                     </li>
                     <li>
-                        <a class="navbar-brand page-scroll" href="#page-top"><img src="img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
+                        <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
                     </li>
                 </ul>
             </div>
@@ -132,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Hubungi Kami</h2>
+                  <h2 class="section-heading">{!! Lang::get('home.kontak') !!}</h2>
                     <hr class="primary">
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
@@ -154,31 +154,32 @@
         <div class="col-md-6 kiri">
           <div class="row">
             <div class="col s3">
-              <a href="/"><img alt="UKDW" class="logo-footer" src="img/logo_ukdw.png"></a>
+              <a href="/"><img alt="UKDW" class="logo-footer" src="/img/logo_ukdw.png"></a>
             </div>
           </div>
           <h5>Need to get out of town? Jumpr is a service that connects riders to drivers with a similar goal - getting to their destination.</h5>
         </div>
         <div class="col-md-6 kanan nav_bawah">
-          <h5>Program Studi Pendidikan Bahasa Inggris - Universitas Kristen Duta Wacana</h5>
+          <h5><strong>{!! Lang::get('home.title2') !!}</strong></h5>
           <ul>
             <li>
-                  <a class="page-scroll" href="#page-top">Home</a>
-              </li>
-              <li>
-                  <a class="page-scroll" href="#visi-misi">Visi Misi</a>
-              </li>
-              <li>
-                  <a class="page-scroll" href="#lect-profile">Profil</a>
-              </li>
-              <li>
-                  <a class="page-scroll" href="#program_pelatihan">Program</a>
-              </li>
-              <li>
-                  <a class="page-scroll" href="#portfolio">Publikasi</a>
-              </li>
-              <li>
-                  <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                <a class="page-scroll" href="#page-top">{!! Lang::get('home.home') !!}</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#visi-misi">{!! Lang::get('home.visiMisi') !!}</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#lect-profile">{!! Lang::get('home.profil') !!}</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#program_pelatihan">{!! Lang::get('home.program') !!}</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#portfolio">{!! Lang::get('home.publikasi') !!}</a>
+            </li>
+            <li>
+                <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
+            </li>
           </ul>
         </div>
       </div>

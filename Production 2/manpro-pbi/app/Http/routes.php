@@ -22,11 +22,20 @@ Route::get('/home', [
 Route::get('/home{section}','HomeController@index');
 
 /*
+  Langua
+*/
+Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@switchLang']);
+/*
   admins routes and it's derivative
 */
 Route::get ('/admin', 'AdminController@index');
 Route::get('/admin/publication/create', 'AdminController@createPublication');
 Route::post('/admin/publication', 'AdminController@storePublication');
+
+Route::get('/admin/logout', [
+  'uses' => 'AdminController@getLogout',
+  'as' => 'admin.logout'
+]);
 /*
   publications download and routes
 */

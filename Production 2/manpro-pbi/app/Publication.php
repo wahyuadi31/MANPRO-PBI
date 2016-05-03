@@ -23,7 +23,7 @@ class Publication extends Model
       'body',
       'created_at',
       'updated_at',
-      'originalFilename'
+      'originalFilename',
       'mime'
     ];
 

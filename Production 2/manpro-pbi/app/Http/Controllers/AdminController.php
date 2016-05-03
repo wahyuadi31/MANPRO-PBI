@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Publication;
-use Request;
 use Carbon\carbon;
+use App\DataDosen;
 
 class AdminController extends Controller
 {
@@ -35,4 +36,17 @@ class AdminController extends Controller
      auth()->guard()->logout();
      return redirect()->route('home');
     }
+
+    public function getDataDosen(){
+      $data = DataDosen::all();
+      return view('admin.data_dosen')->with('data', $data);
+    }
+
+    public function tambahDosen(Request $request){
+      $data = $request->all();
+        DataDosen::create($data);
+      return redirect()->back();
+    }
+
+
 }

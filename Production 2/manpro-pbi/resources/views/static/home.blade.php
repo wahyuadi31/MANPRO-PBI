@@ -105,10 +105,10 @@
                         <a class="page-scroll" href="#contact">{!! Lang::get('home.kontak') !!}</a>
                     </li>
                     <li>
-                      <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
+                      <a class="navbar-brand page-scroll" href="/id/home"><img src="/img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
                     </li>
                     <li>
-                        <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
+                        <a class="navbar-brand page-scroll" href="/en/home"><img src="/img/uk-flag.jpg" width="30px" height="20px" id="logo_bendera"></a>
                     </li>
                 </ul>
             </div>

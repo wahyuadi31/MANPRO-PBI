@@ -24,7 +24,8 @@ class Publication extends Model
       'created_at',
       'updated_at',
       'originalFilename',
-      'mime'
+      'mime',
+      'imagemime',
     ];
 
     // returns the instance of the user who is author of that post

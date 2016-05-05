@@ -18,7 +18,7 @@ class CreateDataDosen extends Migration
         $table->string('nama');
         $table->string('jabatan');
         $table->text('profile');
-        $table->string('foto');
+        $table->string('image');
         $table->timestamps();
       });
     }

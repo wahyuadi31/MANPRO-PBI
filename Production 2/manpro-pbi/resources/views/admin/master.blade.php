@@ -28,13 +28,13 @@
               </li>
       <br/><br/><br/>
               <li>
-                  <a href="#" id="article">ARTICLE</a>
+                  <a href="#" id="article">General Information</a>
               </li>
               <li>
-                  <a href="#" id="publish">PUBLISH</a>
+                  <a href="#" id="publish">Publication</a>
               </li>
               <li>
-                  <a href="#" id="user">USER</a>
+                  <a href="#" id="user">Lecturer</a>
               </li>
       <br/><br/>
       <li>

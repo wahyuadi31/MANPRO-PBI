@@ -29,24 +29,22 @@ Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@swit
   admins routes and it's derivative
 */
 Route::get ('/admin', 'AdminController@index');
+Route::get ('/admin/general', 'AdminController@index');
 Route::get('/admin/publication/create', 'AdminController@createPublication');
 Route::post('/admin/publication', 'AdminController@storePublication');
-
 Route::get('/admin/logout', [
   'uses' => 'AdminController@getLogout',
   'as' => 'admin.logout'
 ]);
-
 Route::get('/admin/data_dosen', [
   'uses' => 'AdminController@getDataDosen',
   'as' => 'data_dosen'
 ]);
-
-
 Route::post('/admin/tambah_dosen', [
   'uses' => 'AdminController@tambahDosen',
   'as' => 'tambah_dosen'
 ]);
+
 /*
   publications download and routes
 */

@@ -1,7 +1,13 @@
 @extends('admin.master')
 
 @section('content')
-
+<style media="screen">
+  .fotodosen{
+    padding: 1px;
+    height: 100px;
+    width: 100px;
+  }
+</style>
 <div id="article-content">
   <nav class="navbar-inverse">
        <div class="container">
@@ -9,7 +15,15 @@
       <br/><br/>
        </div>
   </nav>
+  @if(Session::has('success'))
+    <div class="alert-box success">
+        <h2>{!! Session::get('success') !!}</h2>
+    </div>
+  @endif
 
+  @if(Session::has('error'))
+  	<p class="errors">{!! Session::get('error') !!}</p>
+  @endif
   <div id="page-content-wrapper">
       <div class="container-fluid">
           <div class="row">
@@ -48,9 +62,14 @@
                           <td>
                             {{$datadosen->profile}}
                           </td>
-  
-                          <td>
 
+                          <td>
+                            <img src="
+                            @if(!strcmp($datadosen->image , 'no image'))
+                                {{ asset('/img/placeholder.png') }}
+                            @else
+                                {{ asset('/uploads/img/dosen/'.$datadosen->image)}}
+                            @endif" alt="" class="fotodosen"/>
                           </td>
                           <td>
                             <a href="" class="btn btn-success" role="button">Edit</a>
@@ -69,7 +88,7 @@
                               <div class="panel-body">
                                 <div class="col-sm-8">
 
-                                {!! Form::open(['route' => 'tambah_dosen']) !!}
+                                {!! Form::open(['route' => 'tambah_dosen', 'files' => 'true']) !!}
                                 <div class="form-group">
                                     {!! Form::label('nama', 'Nama:', ['class' => 'control-label']) !!}
                                     {!! Form::text('nama', null, ['class' => 'form-control']) !!}
@@ -82,6 +101,11 @@
                                 <div class="form-group">
                                     {!! Form::label('profile', 'Profile:', ['class' => 'control-label']) !!}
                                     {!! Form::textarea('profile', null, ['class' => 'form-control']) !!}
+                                </div>
+
+                                <div class="form-group">
+                                    {!! Form::label('image', 'Image: ', ['class' => 'control-label']) !!}
+                                    {!! Form::file('image') !!}
                                 </div>
 
                                 {!! Form::submit('Tambah', ['class' => 'btn btn-primary']) !!}

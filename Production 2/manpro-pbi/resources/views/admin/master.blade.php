@@ -10,11 +10,12 @@
 <link rel="stylesheet" href={{asset('css/creative.css')}}>
 <link rel="stylesheet" href={{asset('css/bootstrap.min.css')}}>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+<!-- jQuery -->
+<script src="/js/jquery.js"></script>
 </head>
 
 <body>
 <div id="wrapper">
-
 
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
@@ -28,13 +29,13 @@
               </li>
       <br/><br/><br/>
               <li>
-                  <a href="#" id="article">General Information</a>
+                  <a href="/admin/general" id="article">General Information</a>
               </li>
               <li>
-                  <a href="#" id="publish">Publication</a>
+                  <a href="/admin/publication" id="publish">Publication</a>
               </li>
               <li>
-                  <a href="#" id="user">Lecturer</a>
+                  <a href="/admin/data_dosen" id="user">Lecturer</a>
               </li>
       <br/><br/>
       <li>

@@ -9,6 +9,7 @@ use Input;
 use Validator;
 use Session;
 use  Illuminate\Http\Request;
+use File;
 
 
 class AdminController extends Controller
@@ -18,7 +19,7 @@ class AdminController extends Controller
     }
 
     public function index(){
-      return view('admin.article');
+      return view('admin.general');
     }
 
     public function createPublication()
@@ -46,8 +47,65 @@ class AdminController extends Controller
       return view('admin.data_dosen')->with('data', $data);
     }
 
-    public function tambahDosen(Request $request){
+    public function editDosen($id){
+      $data = DataDosen::findOrFail($id);
+      return view('admin.edit_dosen')->withData($data);
+    }
+    public function update(Request $request, $id){
+      $data = DataDosen::findOrFail($id);
+      $reqs = $request->all();
 
+      $noimage = false;
+      if(strcmp($reqs['changeImage'] , 'false')){
+        $rules = array(
+          'image' => 'required|image',
+          'jabatan' => 'required',
+          'nama' => 'required',
+          'profile' => 'required',
+        );
+      }else{
+        $rules = array(
+          'jabatan' => 'required',
+          'nama' => 'required',
+          'profile' => 'required',
+        );
+        $noimage = true;
+      }
+      $this->validate($request, $rules);
+      if($noimage){
+
+      }else {
+      $oldfile = 'public/uploads/img/dosen/'.$data->image;
+        if($request->file('image')->isValid()) {
+          $destinationPath = 'uploads\img\dosen'; // upload path
+          $extension = $request-> file('image')->getClientOriginalExtension(); // getting image extension
+          $name = $request->input('nama');
+          $vowels = array('-', ':');
+          $time = str_replace($vowels, "", Carbon::now());
+          $fileName = $name.$time.'.'.$extension; // renameing image
+          $request->file('image')->move($destinationPath, $fileName);
+          $data['image'] = $fileName;
+        }else{
+            Session::flash('error', 'uploaded file is not valid');
+            return redirect()->back();
+        }
+          File::delete($oldfile);
+      }
+      $data['id'] = $id;
+      $data['nama'] = $reqs['nama'];
+      $data['jabatan'] = $reqs['jabatan'];
+      $data['profile'] = $reqs['profile'];
+      $data->save();
+      Session::flash('success', 'Data Updated');
+      return redirect( route('data_dosen'));
+    }
+
+    public function FunctionName()
+    {
+      return Carbon::now();
+    }
+
+    public function tambahDosen(Request $request){
       $noimage = false;
       if($request->hasFile('image')){
         $file = array('image' => $request-> file('image'));
@@ -76,7 +134,9 @@ class AdminController extends Controller
             $destinationPath = 'uploads\img\dosen'; // upload path
             $extension = $request-> file('image')->getClientOriginalExtension(); // getting image extension
             $name = $request->input('nama');
-            $fileName = $name.'.'.$extension; // renameing image
+            $vowels = array('-', ':');
+            $time = str_replace($vowels, "", Carbon::now());
+            $fileName = $name.$time.'.'.$extension; // renameing image
             $request->file('image')->move($destinationPath, $fileName);
             $data['image'] = $fileName;
           }else{

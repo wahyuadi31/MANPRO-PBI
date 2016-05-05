@@ -32,17 +32,26 @@ Route::get ('/admin', 'AdminController@index');
 Route::get ('/admin/general', 'AdminController@index');
 Route::get('/admin/publication/create', 'AdminController@createPublication');
 Route::post('/admin/publication', 'AdminController@storePublication');
-Route::get('/admin/logout', [
-  'uses' => 'AdminController@getLogout',
-  'as' => 'admin.logout'
-]);
 Route::get('/admin/data_dosen', [
   'uses' => 'AdminController@getDataDosen',
   'as' => 'data_dosen'
 ]);
+Route::get('/admin/data_dosen/edit/{id}', [
+  'uses' => 'AdminController@editDosen',
+  'as' => 'edit_dosen'
+]);
+Route::post('/admin/update_dosen/{id}', [
+  'uses' => 'AdminController@update',
+  'as' => 'update_dosen'
+]);
 Route::post('/admin/tambah_dosen', [
   'uses' => 'AdminController@tambahDosen',
   'as' => 'tambah_dosen'
+]);
+
+Route::get('/admin/logout', [
+  'uses' => 'AdminController@getLogout',
+  'as' => 'admin.logout'
 ]);
 
 /*
@@ -58,6 +67,7 @@ Route::get('publication/download/{slug}','PublicationController@download');
 Route::controllers([
  'auth' => 'Auth\AuthController',
  'password' => 'Auth\PasswordController',
+ 'admin'=> "AdminController",
 ]);
 
 Route::auth();
@@ -65,6 +75,4 @@ Route::auth();
 /*
   tests routes
 */
-Route::get('/test',function(){
-  return view('static.home-layouted');
-});
+Route::get('/test', 'AdminController@functionName');

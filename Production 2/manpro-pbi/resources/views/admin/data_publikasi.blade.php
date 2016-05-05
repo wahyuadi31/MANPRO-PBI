@@ -16,19 +16,14 @@
        </div>
   </nav>
   @if(Session::has('success'))
-    <div class="alert alert-success">
+    <div class="alert-box success">
         <h2>{!! Session::get('success') !!}</h2>
     </div>
   @endif
 
-  @if($errors->any())
-      <div class="alert alert-danger">
-          @foreach($errors->all() as $error)
-              <p>{{ $error }}</p>
-          @endforeach
-      </div>
+  @if(Session::has('error'))
+  	<p class="errors">{!! Session::get('error') !!}</p>
   @endif
-
   <div id="page-content-wrapper">
       <div class="container-fluid">
           <div class="row">
@@ -47,7 +42,7 @@
                     <div class="panel-heading">Daftar Dosen</div>
                     <div class="panel-body">
                       <table class="table">
-                        @foreach($data as $datadosen)
+                        @foreach($data as $Publication)
 
                         <tr>
 
@@ -59,7 +54,7 @@
                         </tr>
                         <tr>
                           <td>
-                            {{$datadosen->nama}}
+                            {{$datadosen->title}}
                           </td>
                           <td>
                             {{$datadosen->jabatan}}
@@ -77,7 +72,7 @@
                             @endif" alt="" class="fotodosen"/>
                           </td>
                           <td>
-                            <a href="{!! route('edit_dosen', $datadosen->id ) !!}" class="btn btn-success" role="button">Edit</a>
+                            <a href="" class="btn btn-success" role="button">Edit</a>
                             <a href="" class="btn btn-danger" role="button">Hapus</a>
                           </td>
 
@@ -109,7 +104,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    {!! Form::label('image', 'Image: (Max Size 1 MB)', ['class' => 'control-label']) !!}
+                                    {!! Form::label('image', 'Image: ', ['class' => 'control-label']) !!}
                                     {!! Form::file('image') !!}
                                 </div>
 

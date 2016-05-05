@@ -4,8 +4,8 @@
 <style media="screen">
   .fotodosen{
     padding: 1px;
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
   }
   .hidden{
     display: none;
@@ -18,7 +18,7 @@
 <div id="article-content">
   <nav class="navbar-inverse">
     <div class="container">
-      <h1 class="glyphicon glyphicon-duplicate"> Data Dosen </h1>
+      <h1 class="glyphicon glyphicon-duplicate"> DataDosen </h1>
       <br/><br/>
     </div>
   </nav>
@@ -46,7 +46,7 @@
         <div class="panel panel-default">
           <div class="col-md-10">
             <div class="panel panel-default">
-              <div class="panel-heading">Tambah Dosen</div>
+              <div class="panel-heading">Edit Dosen</div>
               <div class="panel-body">
                 <div class="col-sm-8">
                   {!! Form::open([ 'route' => ['update_dosen', $data->id ], 'files' => 'true']) !!}
@@ -82,8 +82,8 @@
                       }
                     }
                     </script>
-                    <a class="btn" onclick="toggler()" role="button" >Change Image: </a>
                   </div>
+                  <a class="btn btn-primary" onclick="toggler()" role="button" >Change Image: </a>
                   <div class="form-group" id="changeimg">
                     {!! Form::label('image', 'Choose file: ', ['class' => 'control-label']) !!}
                     {!! Form::hidden('changeImage', 'true', ['id'=>'changeImage'])!!}
@@ -92,7 +92,9 @@
                   <script type="text/javascript">
                     toggler();
                   </script>
-                  {!! Form::submit('Tambah', ['class' => 'btn btn-primary']) !!}
+                  <br/>
+                  <br/>
+                  {!! Form::submit('Simpan', ['class' => 'btn btn-primary']) !!}
 
                   {!! Form::close() !!}
               </div>

@@ -78,7 +78,7 @@
                           </td>
                           <td>
                             <a href="{!! route('edit_dosen', $datadosen->id ) !!}" class="btn btn-success" role="button">Edit</a>
-                            <a href="" class="btn btn-danger" role="button">Hapus</a>
+                            <a href="{!! route('delete_dosen', $datadosen->id )!!}" class="btn btn-danger" role="button">Hapus</a>
                           </td>
 
 

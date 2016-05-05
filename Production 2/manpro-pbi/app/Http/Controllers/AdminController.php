@@ -44,14 +44,14 @@ class AdminController extends Controller
 
     public function getDataDosen(){
       $data = DataDosen::all();
-      return view('admin.data_dosen')->with('data', $data);
+      return view('admin.data_dosen.data_dosen')->with('data', $data);
     }
 
     public function editDosen($id){
       $data = DataDosen::findOrFail($id);
-      return view('admin.edit_dosen')->withData($data);
+      return view('admin.data_dosen.edit_dosen')->withData($data);
     }
-    public function update(Request $request, $id){
+    public function updateDosen(Request $request, $id){
       $data = DataDosen::findOrFail($id);
       $reqs = $request->all();
 
@@ -75,7 +75,7 @@ class AdminController extends Controller
       if($noimage){
 
       }else {
-      $oldfile = 'public/uploads/img/dosen/'.$data->image;
+        $oldfile = 'public/uploads/img/dosen/'.$data->image;
         if($request->file('image')->isValid()) {
           $destinationPath = 'uploads\img\dosen'; // upload path
           $extension = $request-> file('image')->getClientOriginalExtension(); // getting image extension
@@ -100,6 +100,7 @@ class AdminController extends Controller
       return redirect( route('data_dosen'));
     }
 
+    //this is test function
     public function FunctionName()
     {
       return Carbon::now();
@@ -150,5 +151,15 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+    public function deleteDosen($id)
+    {
+      $data = DataDosen::findOrFail($id);
+      return view('admin.data_dosen.confirm_delete_dosen')->withData($data);
+    }
 
+    public function destroyDosen($id)
+    {
+      $data = DataDosen::findOrFail($id);
+      $data->delete();
+    }
 }

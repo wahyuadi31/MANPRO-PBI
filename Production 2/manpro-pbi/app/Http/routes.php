@@ -40,13 +40,21 @@ Route::get('/admin/data_dosen/edit/{id}', [
   'uses' => 'AdminController@editDosen',
   'as' => 'edit_dosen'
 ]);
+Route::get('/admin/data_dosen/delete/{id}', [
+  'uses' => 'AdminController@deleteDosen',
+  'as' => 'delete_dosen'
+]);
 Route::post('/admin/update_dosen/{id}', [
-  'uses' => 'AdminController@update',
+  'uses' => 'AdminController@updateDosen',
   'as' => 'update_dosen'
 ]);
 Route::post('/admin/tambah_dosen', [
   'uses' => 'AdminController@tambahDosen',
   'as' => 'tambah_dosen'
+]);
+Route::post('/admin/delete_dosen/{id}', [
+  'uses' => 'AdminController@destroyDosen',
+  'as' => 'destroy_dosen'
 ]);
 
 Route::get('/admin/logout', [

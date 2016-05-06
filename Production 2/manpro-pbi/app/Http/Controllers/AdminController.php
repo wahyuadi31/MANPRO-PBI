@@ -88,7 +88,7 @@ class AdminController extends Controller
           $request->file('image')->move($destinationPath, $fileName);
           $data['image'] = $fileName;
         }else{
-            Session::flash('error', 'uploaded file is not valid');
+            Session::flash('error', 'File yang diupload tidak valid!');
             return redirect()->back();
         }
           File::delete($oldfile);
@@ -143,13 +143,13 @@ class AdminController extends Controller
             $request->file('image')->move($destinationPath, $fileName);
             $data['image'] = $fileName;
           }else{
-              Session::flash('error', 'uploaded file is not valid');
+              Session::flash('error', 'File yang diupload tidak valid!');
               return redirect()->back();
           }
         }
 
         DataDosen::create($data);
-        Session::flash('success', 'Data Added');
+        Session::flash('success', 'Data Berhasil Ditambahkan');
         return redirect()->back();
     }
 
@@ -163,5 +163,7 @@ class AdminController extends Controller
     {
       $data = DataDosen::findOrFail($id);
       $data->delete();
+      Session::flash('success', 'Data Telah Dihapus');
+      return redirect( route('data_dosen'));
     }
 }

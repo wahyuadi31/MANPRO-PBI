@@ -157,14 +157,15 @@
                   <div class="col-lg-3 col-md-6 text-center">
                       <div class="service-box">
                           <i class="fa fa-4x wow bounceIn text-primary">
-                          	<img class="img-profil img-circle" src="@if(!strcmp($dosen->image , 'no image'))
+                          	<img class="img-profil img-circle" src="
+                              @if(!strcmp($dosen->image , 'no image'))
                                   {{ asset('/img/placeholder.png') }}
                               @else
                                   {{ asset('/uploads/img/dosen/'.$dosen->image)}}
                               @endif"/>
                           </i>
-                          <h3>{!! $dosen->nama!!}</h3>
-                          <p class="text-muted">{!! $dosen->profile!!}</p>
+                          <h3>{{ $dosen->nama }}</h3>
+                          <p class="text-muted">{{ $dosen->profile }}</p>
                       </div>
                   </div>
 

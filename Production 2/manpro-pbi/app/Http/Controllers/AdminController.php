@@ -1,5 +1,7 @@
 <?php
-
+// strongest controller in this laravel app LOL
+// handles all CRUD for data_dosen and publikasi
+// handle requests on /admin too
 namespace App\Http\Controllers;
 
 use App\Publication;
@@ -22,12 +24,12 @@ class AdminController extends Controller
       return view('admin.general');
     }
 
-    public function createPublication()
-    {
-        return view('dynamic.createPublication');
+    public function getDataPublication(){
+      $data = Publication::all();
+      return view('admin.publication.data_publikasi')->with('data', $data);
     }
 
-    public function storePublication()
+    public function tambahPublication()
     {
         $input = Request::all();
         $input['created_at'] = Carbon::now();

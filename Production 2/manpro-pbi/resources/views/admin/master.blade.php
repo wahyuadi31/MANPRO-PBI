@@ -32,10 +32,10 @@
                   <a href="/admin/general" id="article">Informasi Prodi</a>
               </li>
               <li>
-                  <a href="/admin/publication" id="publish">Publikasi</a>
+                  <a href="{{ route('data_publikasi') }}" id="publish">Publikasi</a>
               </li>
               <li>
-                  <a href="/admin/data_dosen" id="user">Data Dosen</a>
+                  <a href="{{ route('data_dosen') }}" id="user">Data Dosen</a>
               </li>
       <br/><br/>
       <li>

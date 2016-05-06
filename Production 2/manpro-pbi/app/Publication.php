@@ -16,6 +16,7 @@ class Publication extends Model
     protected $guarded = [];
 
     protected $fillable =[
+      'id',
       'author_id',
       'title',
       'abstract',

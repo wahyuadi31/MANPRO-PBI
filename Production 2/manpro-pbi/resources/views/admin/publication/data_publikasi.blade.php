@@ -11,7 +11,7 @@
 <div id="article-content">
   <nav class="navbar-inverse">
        <div class="container">
-          <h1 class="glyphicon glyphicon-duplicate"> Data Dosen </h1>
+          <h1 class="glyphicon glyphicon-duplicate"> Data Publikasi </h1>
       <br/><br/>
        </div>
   </nav>
@@ -39,28 +39,33 @@
           <div class="row">
             <div class="col-md-10" >
                 <div class="panel panel-default">
-                    <div class="panel-heading">Daftar Dosen</div>
+                    <div class="panel-heading">Daftar Publikasi</div>
                     <div class="panel-body">
                       <table class="table">
                         @foreach($data as $Publication)
 
                         <tr>
 
-                          <th>Nama Dosen</th>
-                          <th>Jabatan</th>
-                          <th>Profile</th>
+                          <th>Judul</th>
+                          <th>Abstract</th>
+                          <th>ShortDesc</th>
+                          <th>File</th>
                           <th>Foto</th>
+                          <th>Creator</th>
                           <th></th>
                         </tr>
                         <tr>
                           <td>
-                            {{$datadosen->title}}
+                            {{$Publication->title}}
                           </td>
                           <td>
-                            {{$datadosen->jabatan}}
+                            {{$datadosen->abstract}}
                           </td>
                           <td>
-                            {{$datadosen->profile}}
+                            {{$datadosen->body}}
+                          </td>
+                          <td>
+                            {{$data->originalFileName}}
                           </td>
 
                           <td>
@@ -88,24 +93,39 @@
                               <div class="panel-body">
                                 <div class="col-sm-8">
 
+                                <?php  $author = 1 ; ?>
                                 {!! Form::open(['route' => 'tambah_dosen', 'files' => 'true']) !!}
                                 <div class="form-group">
-                                    {!! Form::label('nama', 'Nama:', ['class' => 'control-label']) !!}
-                                    {!! Form::text('nama', null, ['class' => 'form-control']) !!}
+                                    {!! Form::label('title', 'Judul :', ['class' => 'control-label']) !!}
+                                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                                </div>
+                                <script type="text/javascript">
+                                function addAuth() {
+
+                                }
+                                </script>
+                                    {!! Form::hidden('authors', 1, ['id'=>'authors']) !!}
+
+                                <div class="form-group">
+                                    {!! Form::label('author'.$author, 'Penulis :', ['class' => 'control-label']) !!}
+                                    {!! Form::text('author'.$author, null, ['class' => 'form-control']) !!}
+                                </div>
+
+                                <a class="btn btn-primary" onclick="addAuth()" role="button" >Tambahkan Penulis : </a>
+
+                                <div class="form-group">
+                                    {!! Form::label('abstract', 'Abstract: ', ['class' => 'control-label']) !!}
+                                    {!! Form::textarea('abstract', null, ['class' => 'form-control']) !!}
                                 </div>
 
                                 <div class="form-group">
-                                    {!! Form::label('jabatan', 'Jabatan:', ['class' => 'control-label']) !!}
-                                    {!! Form::text('jabatan', null, ['class' => 'form-control']) !!}
-                                </div>
-                                <div class="form-group">
-                                    {!! Form::label('profile', 'Profile:', ['class' => 'control-label']) !!}
-                                    {!! Form::textarea('profile', null, ['class' => 'form-control']) !!}
+                                    {!! Form::label('filepdf', 'File : (PDF max 10 MB) ', ['class' => 'control-label']) !!}
+                                    {!! Form::file('filepdf') !!}
                                 </div>
 
                                 <div class="form-group">
-                                    {!! Form::label('image', 'Image: ', ['class' => 'control-label']) !!}
-                                    {!! Form::file('image') !!}
+                                  {!! Form::label('image', 'Image: ', ['class' => 'control-label']) !!}
+                                  {!! Form::file('image') !!}
                                 </div>
 
                                 {!! Form::submit('Tambah', ['class' => 'btn btn-primary']) !!}

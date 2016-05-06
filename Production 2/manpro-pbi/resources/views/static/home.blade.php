@@ -44,7 +44,7 @@
     <script type="text/javascript" src="/js/jquery.nivo.slider.js"></script>
     <script type="text/javascript" src="/js/jquery.nivo.slider.pack.js"></script>
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
     (function ($) {
         $(document).ready(function() {
           if (typeof window.location.hash !== 'undefined') {
@@ -60,7 +60,7 @@
       program : 'program-pelatihan'
       publikasi :'portfolio'
     */
-    </script>
+    </script> --}}
 </head>
 
 <body id="page-top">
@@ -153,16 +153,23 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x wow bounceIn text-primary">
-                        	<img class="img-profil img-circle" src="/img/profil1.jpg">
-                        </i>
-                        <h3>Dosen 1</h3>
-                        <p class="text-muted">Profil singkat bla bla bla</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
+                @foreach($Dosens as $dosen)
+                  <div class="col-lg-3 col-md-6 text-center">
+                      <div class="service-box">
+                          <i class="fa fa-4x wow bounceIn text-primary">
+                          	<img class="img-profil img-circle" src="@if(!strcmp($dosen->image , 'no image'))
+                                  {{ asset('/img/placeholder.png') }}
+                              @else
+                                  {{ asset('/uploads/img/dosen/'.$dosen->image)}}
+                              @endif"/>
+                          </i>
+                          <h3>{!! $dosen->nama!!}</h3>
+                          <p class="text-muted">{!! $dosen->profile!!}</p>
+                      </div>
+                  </div>
+
+                @endforeach
+                {{-- <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x wow bounceIn text-primary">
                         	<img class="img-profil img-circle" src="/img/profil2.jpg">
@@ -188,7 +195,7 @@
                         <h3>Dosen 4</h3>
                         <p class="text-muted">Profil singkat bla bla bla</p>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- <div class="container text-center" style="padding-top: 10%">
                 <a href="#" class="btn btn-primary btn-xl wow tada">See More</a>

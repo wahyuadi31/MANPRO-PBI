@@ -19,7 +19,7 @@ Route::get('/home', [
   'as' => 'home',
   'uses' =>'HomeController@index'
 ]);
-Route::get('/home{section}','HomeController@index');
+//Route::get('/home{section}','HomeController@index');
 
 /*
   Langua
@@ -30,32 +30,41 @@ Route::get('lang/{lang}', ['as'=>'lang.switch', 'uses'=>'LanguageController@swit
 */
 Route::get ('/admin', 'AdminController@index');
 Route::get ('/admin/general', 'AdminController@index');
-Route::get('/admin/publication/create', 'AdminController@createPublication');
-Route::post('/admin/publication', 'AdminController@storePublication');
-Route::get('/admin/data_dosen', [
-  'uses' => 'AdminController@getDataDosen',
-  'as' => 'data_dosen'
-]);
-Route::get('/admin/data_dosen/edit/{id}', [
-  'uses' => 'AdminController@editDosen',
-  'as' => 'edit_dosen'
-]);
-Route::get('/admin/data_dosen/delete/{id}', [
-  'uses' => 'AdminController@deleteDosen',
-  'as' => 'delete_dosen'
-]);
-Route::post('/admin/update_dosen/{id}', [
-  'uses' => 'AdminController@updateDosen',
-  'as' => 'update_dosen'
-]);
-Route::post('/admin/tambah_dosen', [
-  'uses' => 'AdminController@tambahDosen',
-  'as' => 'tambah_dosen'
-]);
-Route::post('/admin/delete_dosen/{id}', [
-  'uses' => 'AdminController@destroyDosen',
-  'as' => 'destroy_dosen'
-]);
+  //routes for publikasi
+  Route::get('/admin/publikasi',[
+    'uses' => 'AdminController@getDataPublication',
+    'as' => 'data_publikasi'
+  ]);
+  Route::post('/admin/publikasi/add',[
+    'uses' => 'AdminController@tambahPublikasi',
+    'as' => 'tambah_publikasi'
+  ]);
+
+  //routes for data dosen
+  Route::get('/admin/data_dosen', [
+    'uses' => 'AdminController@getDataDosen',
+    'as' => 'data_dosen'
+  ]);
+  Route::get('/admin/data_dosen/edit/{id}', [
+    'uses' => 'AdminController@editDosen',
+    'as' => 'edit_dosen'
+  ]);
+  Route::get('/admin/data_dosen/delete/{id}', [
+    'uses' => 'AdminController@deleteDosen',
+    'as' => 'delete_dosen'
+  ]);
+  Route::post('/admin/data_dosen/update/{id}', [
+    'uses' => 'AdminController@updateDosen',
+    'as' => 'update_dosen'
+  ]);
+  Route::post('/admin/data_dosen/add', [
+    'uses' => 'AdminController@tambahDosen',
+    'as' => 'tambah_dosen'
+  ]);
+  Route::post('/admin/data_dosen/destroy/{id}', [
+    'uses' => 'AdminController@destroyDosen',
+    'as' => 'destroy_dosen'
+  ]);
 
 Route::get('/admin/logout', [
   'uses' => 'AdminController@getLogout',

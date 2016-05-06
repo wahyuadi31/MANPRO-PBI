@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\DataDosen;
 use Illuminate\Http\Request;
 use View;
 use Redirect;
@@ -16,14 +17,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-      if(!isset($section)){
-        $section = "#welcome";
-      }
-      return View::make('static.home')->with('scroll','$section');
-      //return view('Static.home');
+      $dataDosen = DataDosen::all();
+      // if(!isset($section)){
+      //   $section = "#welcome";
+      // }
+      //return View::make('static.home')->withDosens($dataDosen)->with('scroll','$section');
+      return view('Static.home')->with('Dosens',$dataDosen);
     }
-    public function hashtag($section)
-    {
-      return Redirect::to(route('home').$section)->with('scroll',$section);
-    }
+    // public function hashtag($section)
+    // {
+    //   $dataDosen = DataDosen::all();
+    //   return Redirect::to(route('home').$section)->with('scroll',$section)->withDosens($dataDosen);
+    // }
 }

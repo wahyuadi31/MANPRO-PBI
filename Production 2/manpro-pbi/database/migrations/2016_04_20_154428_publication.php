@@ -12,20 +12,19 @@ class Publication extends Migration
      */
     public function up()
     {
-      Schema::create('publication',function(Blueprint $table)
+      Schema::create('publications',function(Blueprint $table)
       {
         $table->increments('id');
-        $table -> integer('author_id') -> unsigned() -> default(0);
-        $table->foreign('author_id')
+        $table -> integer('creator_id') -> unsigned() -> default(0);
+        $table->foreign('creator_id')
             ->references('id')->on('users')
             ->onDelete('cascade');
         $table->string('title')->unique();
         $table->string('abstract');
-        $table->string('mime');
-        $table->string('originalFilename')->unique();
         $table->string('Filename')->unique();
         $table->string('slug')->unique();
         $table->text('body');
+        $table->timestamp('date');
         $table->timestamps();
       });
     }

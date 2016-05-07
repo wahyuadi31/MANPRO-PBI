@@ -11,7 +11,7 @@ class Publication extends Model
     *
     * @var string
     */
-  protected $table = 'publication';
+    protected $table = 'publication';
     //restricts columns from modifying
     protected $guarded = [];
 
@@ -24,14 +24,18 @@ class Publication extends Model
       'body',
       'created_at',
       'updated_at',
-      'originalFilename',
-      'mime',
-      'imagemime',
+      'Filename',
+      // 'mime',
+      // 'imagemime',
     ];
 
     // returns the instance of the user who is author of that post
-    public function author()
+    public function creator()
     {
       return $this->belongsTo('App\User','author_id');
     }
+
+    public function authors() {
+       return $this->belongsToMany('Author', 'publication_author', 'pub_id', 'auth_id');
+   }
 }

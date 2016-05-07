@@ -24,19 +24,85 @@ class AdminController extends Controller
       return view('admin.general');
     }
 
-    public function getDataPublication(){
+    public function getDataPublikasi(){
       $data = Publication::all();
       return view('admin.publication.data_publikasi')->with('data', $data);
     }
 
-    public function tambahPublication()
+    public function tambahPublikasi(Request $request)
     {
-        $input = Request::all();
-        $input['created_at'] = Carbon::now();
-        $input['updated_at'] = Carbon::now();
-        $input['slug'] = Carbon::now()->year();
+        $input = $request->all();
+        $authorCount = $input['authors'];
+        $noimage = false;
+        if($request->hasFile('image')){
+          $file = array('image' => $request-> file('image'));
+          $rules = array(
+            'image' => 'required|image',
+            'judul' => 'required',
+            'abstract' => 'required',
+            'pdf' => 'required|mimes:pdf'
+          );
+          for($i =1; $i <=$authorCount; $i++){
+            $rules['author'.$i] = 'required';
+          }
+          $noimage = false;
+        }else{
+          $noimage = true;
+          $rules = array(
+            'judul' => 'required',
+            'abstract' => 'required',
+            'pdf' => 'required|mimes:pdf'
+          );
+          for($i =1; $i <=$authorCount; $i++){
+            $rules['author'.$i] = 'required';
+          }
+        }
+        $this->validate($request, $rules);
+        //$input['slug'] = Carbon::now()->year();
 
-        return $input;
+        //generate slug name
+        $name = '';
+        for($i =1; $i <= $authorCount; $i++){
+          $tmp = $request->input('author'.$i);
+          $tmp = substr($tmp, 0,3);
+          $name .= $tmp;
+        }
+        $vowels = array('-', ':');
+        $name = str_replace($vowels,"",$name);
+        $time = str_replace($vowels, "", Carbon::now());
+        $slugname = $name.$time;
+        $data = array();
+        $data['slug'] = $slugname;
+
+        if($noimage){
+          $data['image'] = 'no image';
+        }else {
+          if ($request->file('image')->isValid()) {
+            $destinationPath = 'uploads\img\publikasi'; // upload path
+            $extension = $request-> file('image')->getClientOriginalExtension(); // getting image extension
+            $imageName = $slugname.'.'.$extension; // renameing image
+            $request->file('image')->move($destinationPath, $imageName);
+            $data['image'] = $imageName;
+          }else{
+              Session::flash('error', 'File gambar yang diupload tidak valid');
+              return redirect()->back();
+          }
+        }
+
+        if($request->file('pdf')->isValid()){
+          $destinationPath = 'uploads\pdf\publikasi'; // upload path
+          $fileName = $slugname.'.pdf'; // renameing image
+          $request->file('pdf')->move($destinationPath, $fileName);
+          $data['Filename'] = $fileName;
+        }else{
+          Session::flash('error', 'File pdf yang diupload tidak valid');
+          return redirect()->back();
+        }
+
+        $data['title'] = $request['judul'];
+        $data['abstract'] = $request['abstract'];
+
+        return $data;
     }
 
     public function getLogout(){

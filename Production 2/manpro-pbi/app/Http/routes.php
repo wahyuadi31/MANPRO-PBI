@@ -32,7 +32,7 @@ Route::get ('/admin', 'AdminController@index');
 Route::get ('/admin/general', 'AdminController@index');
   //routes for publikasi
   Route::get('/admin/publikasi',[
-    'uses' => 'AdminController@getDataPublication',
+    'uses' => 'AdminController@getDataPublikasi',
     'as' => 'data_publikasi'
   ]);
   Route::post('/admin/publikasi/add',[

@@ -72,15 +72,20 @@ Route::get('/admin/logout', [
 ]);
 
 /*
-  publications download and routes
+  publications download and public routes
 */
 
 Route::get('/publication','PublicationController@index');
-Route::get('/publication/{slug}','PublicationController@show');
+Route::get('/publication/{slug}',[
+  'uses' => 'PublicationController@show',
+  'as' => 'show_publikasi'
+]);
 Route::get('/download/publikasi/{slug}',[
   'uses' => 'PublicationController@download',
   'as' => 'download_publikasi'
-  ]);
+]);
+
+
 /*
   Authentications
 */

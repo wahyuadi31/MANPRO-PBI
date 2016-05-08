@@ -67,7 +67,7 @@ return [
 
     'locale' => 'en',
     'locales' => ['en' => 'English', 'id' => 'Bahasa'],
-    'skip_locales' =>   ['admin', 'login', 'register', 'download'],
+    'skip_locales' =>   ['admin', 'login', 'register', 'download','mirror'],
 
     /*
     |--------------------------------------------------------------------------

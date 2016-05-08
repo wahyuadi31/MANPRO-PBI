@@ -31,7 +31,7 @@ class Publication extends Model
     ];
 
     // returns the instance of the user who is author of that post
-    public function creator()
+    public function user()
     {
       return $this->belongsTo('App\User','author_id');
     }

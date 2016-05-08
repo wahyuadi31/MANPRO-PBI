@@ -211,7 +211,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
                     <hr class="primary">
-                    <div id="wrapper" style="height: 328px; width: 960px">
+                    <div id="wrapper" style="height: 50%px; width: 100%px">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
                                 <a href="">

@@ -39,6 +39,14 @@ Route::get ('/admin/general', 'AdminController@index');
     'uses' => 'AdminController@tambahPublikasi',
     'as' => 'tambah_publikasi'
   ]);
+  Route::get('/admin/publikasi/edit/{id}', [
+    'uses' => 'AdminController@editPublikasi',
+    'as' => 'edit_publikasi'
+  ]);
+  Route::post('/admin/publikasi/update/{id}', [
+    'uses' => 'AdminController@updatePublikasi',
+    'as' => 'update_publikasi'
+  ]);
 
   //routes for data dosen
   Route::get('/admin/data_dosen', [

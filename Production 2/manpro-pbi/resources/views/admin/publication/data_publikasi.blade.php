@@ -84,7 +84,7 @@
                           </td>
 
                           <td>
-                            <a href="" class="btn btn-success" role="button">Edit</a>
+                            <a href="{!! route('edit_publikasi', $Publication->id) !!}" class="btn btn-success" role="button">Edit</a>
                             <a href="" class="btn btn-danger" role="button">Hapus</a>
                           </td>
 
@@ -151,7 +151,7 @@
 
                                 <div class="form-group">
                                   {!! Form::label('date', 'Tanggal publikasi:', ['class' => 'control-label']) !!}
-                                  {!! Form::date('date', \Carbon\Carbon::now()); !!}
+                                  {!! Form::date('date', \Carbon\Carbon::now()->format('d/m/Y') ) !!}
                                 </div>
 
                                 <div class="form-group">

@@ -33,13 +33,9 @@ class AdminController extends Controller
       return view('admin.publication.data_publikasi')->with('data', $data);
     }
 
-    public function getAuthor($authorname)
-    {
-      $haha;
-      echo $authorname;
-
-      echo $haha->name;
-      return $haha;
+    public function editPublikasi($id){
+      $data = Publication::findOrFail($id);
+      return view('admin.publication.edit_publikasi')->withData($data);
     }
 
     public function tambahPublikasi(Request $request)
@@ -135,10 +131,7 @@ class AdminController extends Controller
         return redirect( route('data_publikasi'));
     }
 
-    public function getLogout(){
-     auth()->guard()->logout();
-     return redirect()->route('home');
-    }
+    // function for data_dosen
 
     public function getDataDosen(){
       $data = DataDosen::all();
@@ -149,6 +142,7 @@ class AdminController extends Controller
       $data = DataDosen::findOrFail($id);
       return view('admin.data_dosen.edit_dosen')->withData($data);
     }
+
     public function updateDosen(Request $request, $id){
       $data = DataDosen::findOrFail($id);
       $reqs = $request->all();
@@ -261,5 +255,10 @@ class AdminController extends Controller
       $data->delete();
       Session::flash('success', 'Data Telah Dihapus');
       return redirect( route('data_dosen'));
+    }
+
+    public function getLogout(){
+     auth()->guard()->logout();
+     return redirect()->route('home');
     }
 }

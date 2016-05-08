@@ -209,7 +209,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading"></h2>
+                    <h2 class="section-heading">Program dan Pelatihan</h2>
                     <hr class="primary">
                     <div id="wrapper" style="height: 50%; width: 120%">
                         <div class="slider-wrapper theme-default">

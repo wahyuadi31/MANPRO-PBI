@@ -1,0 +1,13 @@
+diff a/Production 2/manpro-pbi/resources/views/Static/home.blade.php b/Production 2/manpro-pbi/resources/views/Static/home.blade.php	(rejected hunks)
+@@ -209,9 +209,9 @@
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2 text-center">
+-                    <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
++                    <h2 class="section-heading"></h2>
+                     <hr class="primary">
+-                    <div id="wrapper" style="height: 50%; width: 100%">
++                    <div id="wrapper" style="height: 50%; width: 120%">
+                         <div class="slider-wrapper theme-default">
+                             <div id="slidder" class="nivoSlider">
+                                 <a href="">

@@ -209,8 +209,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading"></h2>
+                    <h2 class="section-heading">Program dan Pelatihan</h2>
                     <hr class="primary">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    <div id="wrapper" style="height: 50%; width: 130%;">
+                        <div class="slider-wrapper theme-default">
+                            <div id="slidder" class="nivoSlider">
+                                <a href="">
+
+                                  <img src="/img/IECC.jpg" alt="" title="Intensive English Conversation Class TOEFL"/>
+                                </a>
+                                <a href="">
+                                  <img src="/img/Culture_Event.jpg" alt="" title="Culture_Event">
+                                </a>
+                                <a href=""
+                                  <img src="/img/ICE.jpg" alt="" title="Introduction to College English"/>
+                                </a>
+                                <a href="English Corner">
+                                  <img src="/img/English_Corner.jpg" alt="" title="English Corner Program">
+
+=======
+                    <div id="wrapper" style="height: 50%; width: 100%">
+=======
+>>>>>>> b3c7de87376b2bf160b1e35cba2529a8baf3bc4c
                     <div id="wrapper" style="height: 50%; width: 120%">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">

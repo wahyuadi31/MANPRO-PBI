@@ -212,7 +212,7 @@
                     <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
                     <hr class="primary">
 
-                      <div id="wrapper" style="height: 50%; width: 120% ;align-content: center;">
+                      <div id="wrapper" style="height: 50%; width: 120% ;padding-left: -10%">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
                                 <a href="">

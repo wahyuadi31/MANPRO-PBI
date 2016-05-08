@@ -46,10 +46,10 @@
 
                           <th>Judul</th>
                           <th>Abstract</th>
-                          <th>Authors</th>
-                          <th>File</th>
+                          <th>Penulis</th>
+                          <th>Akses</th>
                           <th>Foto</th>
-                          <th>Preview</th>
+                          <th>Tanggal Publikasi</th>
                           <th></th>
                         </tr>
                         <tr>
@@ -68,26 +68,27 @@
 
                           <td>
                             <a href="{!! route('download_publikasi',$Publication->slug) !!}"> download</a>
+                            <br/>
+                            <a href="{!! route('show_publikasi',$Publication->slug) !!}"> preview</a>
                           </td>
 
                           <td>
                             <img src="
-                            @if( strcmp($Publication->imgMime , 'no image') )
+                            @if(!strcmp($Publication->imgMime , 'no image') )
                                 {{ asset('/img/placeholder.png') }}
                             @else
-                                {{ asset('/uploads/img/dosen/'.$Publication->slug.'.'.$Publication->imgMime)}}
+                                {{ asset('/uploads/img/publikasi/'.$Publication->slug.'.'.$Publication->imgMime)}}
                             @endif" alt="" class="fotodosen"/>
                           </td>
 
                           <td>
-                            <a href="{!! route('show_publikasi',$Publication->slug) !!}"> link</a>
+                              {{$Publication->date->format('d/m/Y')}}
                           </td>
 
                           <td>
-                            <a href="{!! route('edit_publikasi', $Publication->id) !!}" class="btn btn-success" role="button">Edit</a>
+                            <a href="{!! route('edit_publikasi', $Publication)!!}" class="btn btn-success" role="button">Edit</a>
                             <a href="" class="btn btn-danger" role="button">Hapus</a>
                           </td>
-
 
                         </tr>
                         @endforeach

@@ -7,6 +7,9 @@
     height: 100px;
     width: 100px;
   }
+  .hidden{
+    display: none;
+  }
 </style>
 <div id="article-content">
   <nav class="navbar-inverse">
@@ -84,11 +87,12 @@
                                 </script>
 
                                 <div class="form-group" id='divAuthor'>
+                                        {!! Form::label('authorlabel', 'Penulis :', ['class' => 'control-label']) !!}
                                         <?php $ctr =1?>
                                         @foreach($author as $vals)
-                                          {!! Form::label('author'.$ctr, 'Penulis :', ['class' => 'control-label']) !!}
                                           {!! Form::text('author'.$ctr, $vals->name, ['class' => 'form-control']) !!}
                                           <?php $ctr++; ?>
+                                          <br/>
                                         @endforeach
                                 </div>
 
@@ -106,17 +110,54 @@
                                     {!! Form::label('abstract', 'Abstract: ', ['class' => 'control-label']) !!}
                                     {!! Form::textarea('abstract', $data->abstract , ['class' => 'form-control']) !!}
                                 </div>
+                                <script type="text/javascript">
+                                function togglepdf() {
+                                  $("#uploadpdf").toggle();
+                                  if( $("#changePdf").val() === 'false'){
+                                    $("#changePdf").val('true');
+                                  }else{
+                                    $("#changePdf").val('false');
+                                  }
+                                };
 
+                                function toggler() {
+                                  $("#uploadImage").toggle();
+                                  if( $("#changeImage").val() === 'false'){
+                                    $("#changeImage").val('true');
+                                  }else{
+                                    $("#changeImage").val('false');
+                                  }
+                                }
+                                </script>
                                 <div class="form-group">
+                                    {!! Form::hidden('changePdf', 'false', ['id'=>'changePdf'])!!}
                                     {!! Form::label('pdf', 'File : (PDF max 10 MB) ', ['class' => 'control-label']) !!}
-                                    {!! Form::file('pdf') !!}
+                                    <h6> {{ $data->Filename }} <a href="{!! route('download_publikasi',$data->slug) !!}"> lihat</a> </h6>
+                                    <a class="btn btn-primary" onclick="togglepdf()" role="button" >Change File: </a>
+                                    <br/>
+                                    <div class="" id='uploadpdf'>
+                                      {!! Form::file('pdf') !!}
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
                                   {!! Form::label('image', 'Image: ', ['class' => 'control-label']) !!}
-                                  {!! Form::file('image') !!}
+                                  {!! Form::hidden('changeImage', 'false', ['id'=>'changeImage'])!!}
+                                  <br/>
+                                  <a class="btn btn-primary" onclick="toggler()" role="button" >Change Image: </a>
+                                  <br/>
+                                  <div id="uploadImage">
+                                    {!! Form::file('image') !!}
+                                  </div>
                                 </div>
 
+
+                                <script type="text/javascript">
+                                  $("#uploadpdf").toggle();
+                                  $("#uploadImage").toggle();
+                                </script>
+                                <br/>
+                                <br/>
                                 {!! Form::submit('Tambah', ['class' => 'btn btn-primary']) !!}
 
                                 {!! Form::close() !!}

@@ -209,8 +209,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
+                    <h2 class="section-heading"></h2>
                     <hr class="primary">
+<<<<<<< HEAD
 <<<<<<< HEAD
                     <div id="wrapper" style="height: 328px; width: 960px;">
                         <div class="slider-wrapper theme-default">
@@ -230,6 +231,9 @@
 
 =======
                     <div id="wrapper" style="height: 50%; width: 100%">
+=======
+                    <div id="wrapper" style="height: 50%; width: 120%">
+>>>>>>> f16f150e806472238150014a15b7bef6c5b1a7b4
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
                                 <a href="">

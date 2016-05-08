@@ -46,7 +46,7 @@
 
                           <th>Judul</th>
                           <th>Abstract</th>
-                          <th>ShortDesc</th>
+                          <th>Authors</th>
                           <th>File</th>
                           <th>Foto</th>
                           <th>Creator</th>
@@ -57,23 +57,31 @@
                             {{$Publication->title}}
                           </td>
                           <td>
-                            {{$datadosen->abstract}}
+                            {{$Publication->abstract}}
                           </td>
                           <td>
-                            {{$datadosen->body}}
+                            @foreach($Publication->authors as $auths)
+                              {{ $auths->name }}
+                              <br/>
+                            @endforeach
                           </td>
                           <td>
-                            {{$data->originalFileName}}
+                              {{$Publication->FileName}}
                           </td>
 
                           <td>
                             <img src="
-                            @if(!strcmp($datadosen->image , 'no image'))
+                            @if( strcmp($Publication->imgMime , 'no image') )
                                 {{ asset('/img/placeholder.png') }}
                             @else
-                                {{ asset('/uploads/img/dosen/'.$datadosen->image)}}
+                                {{ asset('/uploads/img/dosen/'.$Publication->slug.'.'.$Publication->imgMime)}}
                             @endif" alt="" class="fotodosen"/>
                           </td>
+
+                          <td>
+                            {!! route('download_publikasi',$Publication->slug) !!}
+                          </td>
+
                           <td>
                             <a href="" class="btn btn-success" role="button">Edit</a>
                             <a href="" class="btn btn-danger" role="button">Hapus</a>

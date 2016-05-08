@@ -4,14 +4,18 @@
 // handle requests on /admin too
 namespace App\Http\Controllers;
 
-use App\Publication;
+use App\Http\Controllers\Auth\AuthController;
 use Carbon\carbon;
+use App\Publication;
 use App\DataDosen;
+use App\Author;
 use Input;
 use Validator;
 use Session;
-use  Illuminate\Http\Request;
+use Illuminate\Http\Request;
 use File;
+use Auth;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 
 class AdminController extends Controller
@@ -29,6 +33,15 @@ class AdminController extends Controller
       return view('admin.publication.data_publikasi')->with('data', $data);
     }
 
+    public function getAuthor($authorname)
+    {
+      $haha;
+      echo $authorname;
+
+      echo $haha->name;
+      return $haha;
+    }
+
     public function tambahPublikasi(Request $request)
     {
         $input = $request->all();
@@ -40,18 +53,19 @@ class AdminController extends Controller
             'image' => 'required|image',
             'judul' => 'required',
             'abstract' => 'required',
-            'pdf' => 'required|mimes:pdf'
+            'pdf' => 'required|mimes:pdf',
+            'date' => 'required|date_format:d/m/Y|before:today'
           );
           for($i =1; $i <=$authorCount; $i++){
             $rules['author'.$i] = 'required';
           }
-          $noimage = false;
         }else{
           $noimage = true;
           $rules = array(
             'judul' => 'required',
             'abstract' => 'required',
-            'pdf' => 'required|mimes:pdf'
+            'pdf' => 'required|mimes:pdf',
+            'date' => 'required|date_format:d/m/Y|before:today'
           );
           for($i =1; $i <=$authorCount; $i++){
             $rules['author'.$i] = 'required';
@@ -67,7 +81,7 @@ class AdminController extends Controller
           $tmp = substr($tmp, 0,3);
           $name .= $tmp;
         }
-        $vowels = array('-', ':');
+        $vowels = array('-', ':', ' ');
         $name = str_replace($vowels,"",$name);
         $time = str_replace($vowels, "", Carbon::now());
         $slugname = $name.$time;
@@ -75,14 +89,14 @@ class AdminController extends Controller
         $data['slug'] = $slugname;
 
         if($noimage){
-          $data['image'] = 'no image';
+          $data['imgMime'] = 'no image';
         }else {
           if ($request->file('image')->isValid()) {
             $destinationPath = 'uploads\img\publikasi'; // upload path
             $extension = $request-> file('image')->getClientOriginalExtension(); // getting image extension
             $imageName = $slugname.'.'.$extension; // renameing image
             $request->file('image')->move($destinationPath, $imageName);
-            $data['image'] = $imageName;
+            $data['imgMime'] = $extension;
           }else{
               Session::flash('error', 'File gambar yang diupload tidak valid');
               return redirect()->back();
@@ -101,8 +115,24 @@ class AdminController extends Controller
 
         $data['title'] = $request['judul'];
         $data['abstract'] = $request['abstract'];
+        $data['creator_id'] = Auth::id();
+        $data['date'] = $request->input('date');
+        $pub = Publication::create($data);
 
-        return $data;
+        echo $pub->id;
+        $authorsnow = [];
+        for($i =1; $i <= $authorCount; $i++){
+          $authorname = $request->input('author'.$i);
+          try{
+              $haha =  author::where('name', $authorname)->firstOrFail();
+          }catch(ModelNotFoundException $e){
+              $haha =  author::create(['name'=> $authorname]);
+          }
+          $authorsnow[$i] = $haha;
+          $pub->authors()->attach($authorsnow[$i]->id);
+        }
+        Session::flash('success', 'Publikasi Telah Ditambahkan');
+        return redirect( route('data_publikasi'));
     }
 
     public function getLogout(){

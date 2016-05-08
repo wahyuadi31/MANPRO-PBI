@@ -18,5 +18,7 @@ class DatabaseSeeder extends Seeder
         $user->password = bcrypt("12341234");
         $user->role = "admin";
         $user->save();
+        
+        $this->call(DosenTableSeeder::class);
     }
 }

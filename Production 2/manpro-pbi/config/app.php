@@ -67,7 +67,7 @@ return [
 
     'locale' => 'en',
     'locales' => ['en' => 'English', 'id' => 'Bahasa'],
-    'skip_locales' =>   ['admin', 'login', 'register'],
+    'skip_locales' =>   ['admin', 'login', 'register', 'download'],
 
     /*
     |--------------------------------------------------------------------------
@@ -150,6 +150,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Orangehill\Iseed\IseedServiceProvider::class,
 
         /*
          * Application Service Providers...

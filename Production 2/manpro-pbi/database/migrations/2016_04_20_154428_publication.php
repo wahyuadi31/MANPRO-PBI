@@ -23,7 +23,7 @@ class Publication extends Migration
         $table->string('abstract');
         $table->string('Filename')->unique();
         $table->string('slug')->unique();
-        $table->text('body');
+        $table->string('imgMime');
         $table->timestamp('date');
         $table->timestamps();
       });

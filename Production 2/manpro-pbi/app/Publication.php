@@ -11,20 +11,21 @@ class Publication extends Model
     *
     * @var string
     */
-    protected $table = 'publication';
+    protected $table = 'publications';
     //restricts columns from modifying
     protected $guarded = [];
 
     protected $fillable =[
       'id',
-      'author_id',
+      'creator_id',
       'title',
       'abstract',
       'slug',
-      'body',
+      'imgMime',
       'created_at',
       'updated_at',
       'Filename',
+      'date',
       // 'mime',
       // 'imagemime',
     ];
@@ -36,6 +37,6 @@ class Publication extends Model
     }
 
     public function authors() {
-       return $this->belongsToMany('Author', 'publication_author', 'pub_id', 'auth_id');
+       return $this->belongsToMany('App\Author', 'publication_author', 'pub_id', 'auth_id');
    }
 }

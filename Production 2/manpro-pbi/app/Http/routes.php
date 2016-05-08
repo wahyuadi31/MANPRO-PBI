@@ -77,7 +77,10 @@ Route::get('/admin/logout', [
 
 Route::get('/publication','PublicationController@index');
 Route::get('/publication/{slug}','PublicationController@show');
-Route::get('publication/download/{slug}','PublicationController@download');
+Route::get('/download/publikasi/{slug}',[
+  'uses' => 'PublicationController@download',
+  'as' => 'download_publikasi'
+  ]);
 /*
   Authentications
 */

@@ -49,7 +49,7 @@
                           <th>Authors</th>
                           <th>File</th>
                           <th>Foto</th>
-                          <th>Creator</th>
+                          <th>Preview</th>
                           <th></th>
                         </tr>
                         <tr>
@@ -65,8 +65,9 @@
                               <br/>
                             @endforeach
                           </td>
+
                           <td>
-                              {{$Publication->FileName}}
+                            <a href="{!! route('download_publikasi',$Publication->slug) !!}"> download</a>
                           </td>
 
                           <td>
@@ -79,7 +80,7 @@
                           </td>
 
                           <td>
-                            {!! route('download_publikasi',$Publication->slug) !!}
+                            <a href="{!! route('show_publikasi',$Publication->slug) !!}"> link</a>
                           </td>
 
                           <td>

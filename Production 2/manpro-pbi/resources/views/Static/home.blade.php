@@ -212,19 +212,21 @@
                     <h2 class="section-heading">{!! Lang::get('home.programtraining') !!}</h2>
                     <hr class="primary">
 
-                      <div id="wrapper" style="height: 50%; width: 120%">
+                      <div id="wrapper" style="height: 50%; width: 120% ;align-content: center;">
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
                                 <a href="">
-
                                   <img src="/img/IECC.jpg" alt="" title="Intensive English Conversation Class TOEFL"/>
                                 </a>
+
                                 <a href="">
                                   <img src="/img/Culture_Event.jpg" alt="" title="Culture_Event">
                                 </a>
-                                <a href=""
+
+                                <a href="">
                                   <img src="/img/ICE.jpg" alt="" title="Introduction to College English"/>
                                 </a>
+
                                 <a href="English Corner">
                                   <img src="/img/English_Corner.jpg" alt="" title="English Corner Program">
                                 </a>

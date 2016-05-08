@@ -25,9 +25,6 @@
             </div>
 
           </div>
-          <!--   <div>
-          <a href="#" class="btn btn-default btn-xl wow tada col-xs-6 col-centered col-min">Read ...</a>
-        </div> -->
 
 
       </div>

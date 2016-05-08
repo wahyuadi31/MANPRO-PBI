@@ -205,7 +205,7 @@
         </div>
     </section>
 
-    <section id="program_pelatihan" style="height: 120%; background-color: #EDEDED">
+    <section id="program_pelatihan" style="background-color: #EDEDED; height:120%">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -215,6 +215,18 @@
                         <div class="slider-wrapper theme-default">
                             <div id="slidder" class="nivoSlider">
                                 <a href="">
+<<<<<<< HEAD:Production 2/manpro-pbi/resources/views/Static/home.blade.php
+                                  <img src="/img/IECC.jpg" data-thumb="img/IECC.jpg" alt="" title="Intensive English Conversation Class TOEFL"/>
+                                </a>
+                                <a href="">
+                                  <img src="/img/Culture_Event.jpg" data-thumb="img/Culture_Event.jpg" alt="" title="Culture_Event">
+                                </a>
+                                <a href=""
+                                  <img src="/img/ICE.jpg" data-thumb="img/ICE.jpg" alt="" title="Introduction to College English"/>
+                                </a>
+                                <a href="English Corner">
+                                  <img src="/img/English_Corner.jpg" data-thumb="img/English_Corner.jpg" alt="" title="English Corner Program">
+=======
                                     <img src="/img/IECC.jpg" alt="" title="Intensive English Conversation Class TOEFL"/>
                                 </a>
                                 <a href="">
@@ -225,6 +237,7 @@
                                 </a>
                                 <a href="English Corner">
                                     <img src="/img/English_Corner.jpg" alt="" title="English Corner Program">
+>>>>>>> 31f0dfe25df84cbc1d49c6aa74a27886f62551c4:Production 2/manpro-pbi/resources/views/static/home.blade.php
                                 </a>
                             </div>
                             <div id="htmlcaption" class="nivo-html-caption">

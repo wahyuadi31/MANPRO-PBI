@@ -24,9 +24,10 @@ class HomeController extends Controller
       //return View::make('static.home')->withDosens($dataDosen)->with('scroll','$section');
       return view('Static.home')->with('Dosens',$dataDosen);
     }
-    // public function hashtag($section)
-    // {
-    //   $dataDosen = DataDosen::all();
-    //   return Redirect::to(route('home').$section)->with('scroll',$section)->withDosens($dataDosen);
-    // }
+
+    public function redirectLanguage($lang)
+    {
+      
+    }
+
 }

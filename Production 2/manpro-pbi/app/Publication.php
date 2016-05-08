@@ -15,6 +15,8 @@ class Publication extends Model
     //restricts columns from modifying
     protected $guarded = [];
 
+    protected $dates = ['date'];
+
     protected $fillable =[
       'id',
       'creator_id',

@@ -38,6 +38,11 @@ class AdminController extends Controller
     return view('admin.publication.edit_publikasi')->withData($data);
   }
 
+  public function deletePublikasi($id){
+    $data = Publication::findOrFail($id);
+    return view('admin.publication.delete_publikasi')->withData($data);
+  }
+
   public function tambahPublikasi(Request $request)
   {
     $input = $request->all();

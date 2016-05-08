@@ -47,6 +47,14 @@ Route::get ('/admin/general', 'AdminController@index');
     'uses' => 'AdminController@updatePublikasi',
     'as' => 'update_publikasi'
   ]);
+  Route::get('/admin/publikasi/delete/{id}', [
+    'uses' => 'AdminController@deletePublikasi',
+    'as' => 'delete_dosen'
+  ]);
+  Route::post('/admin/publikasi/destroy/{id}', [
+    'uses' => 'AdminController@destroyPublikasi',
+    'as' => 'destroy_dosen'
+  ]);
 
   //routes for data dosen
   Route::get('/admin/data_dosen', [

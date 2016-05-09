@@ -136,7 +136,7 @@
                     <hr class="light">
                     <p class="text-faded">{!! Lang::get('home.visi') !!}</p>
                     <p class="text-faded">{!! Lang::get('home.misi') !!}</p>
-                    <a href="#" class="btn btn-default btn-xl">{!! Lang::get('home.join') !!}</a>
+                    <a href="#contact" class="page-scroll btn btn-default btn-xl">{!! Lang::get('home.join') !!}</a>
                 </div>
             </div>
         </div>
@@ -258,7 +258,7 @@
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -273,7 +273,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -288,7 +288,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -303,7 +303,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -318,7 +318,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -333,7 +333,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#" class="portfolio-box">
-                        <img src="/img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <img src="/img/placeholder/placeholder1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                               <div class="project-category text-faded">
@@ -352,7 +352,7 @@
         <div class="bg-dark container text-center col-md-4" style="width:100%; height:auto; padding-top:5%; padding-bottom: 5%">
             <div class="call-to-action">
                 <!-- <h2>Want to see all the news?</h2> -->
-                <a href="/publication" class="btn btn-default btn-xl wow tada">{!! Lang::get('home.selengkapnya') !!}</a>
+                <a href="{!! route('home_publikasi')!!}" class="btn btn-default btn-xl wow tada">{!! Lang::get('home.selengkapnya') !!}</a>
             </div>
         </div>
     </section>

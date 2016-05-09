@@ -57,13 +57,15 @@
                             {{$Publication->title}}
                           </td>
                           <td>
-                            {{$Publication->abstract}}
+                            {{ str_limit($Publication->abstract,50, ' ...') }}
                           </td>
                           <td>
-                            @foreach($Publication->authors as $auths)
-                              {{ $auths->name }}
-                              <br/>
-                            @endforeach
+                            <ul>
+                              @foreach($Publication->authors as $auths)
+                                <li> {{ $auths->name }}</li>
+                              @endforeach
+                            </ul>
+
                           </td>
 
                           <td>
@@ -97,7 +99,7 @@
                   </div>
                       <div class="col-md-10">
                           <div class="panel panel-default">
-                            <div class="panel-heading">Tambah Dosen</div>
+                            <div class="panel-heading">Tambah Publikasi</div>
                               <div class="panel-body">
                                 <div class="col-sm-8">
 

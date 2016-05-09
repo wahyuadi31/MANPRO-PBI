@@ -91,7 +91,10 @@ Route::get('/admin/logout', [
   publications download and public routes
 */
 
-Route::get('/publication','PublicationController@index');
+Route::get('/publication',[
+  'uses' => 'PublicationController@index',
+  'as' => 'home_publikasi'
+]);
 Route::get('/publication/{slug}',[
   'uses' => 'PublicationController@show',
   'as' => 'show_publikasi'

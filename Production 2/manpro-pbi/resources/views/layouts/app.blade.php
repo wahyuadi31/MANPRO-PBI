@@ -96,22 +96,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.home') !!}</a>
+                        <a class="page-scroll" href="{{route('home')}}">{!! Lang::get('home.home') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.visiMisi') !!}</a>
+                        <a class="page-scroll" href="{{route('home')}}">{!! Lang::get('home.visiMisi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.profil') !!}</a>
+                        <a class="page-scroll" href="{{route('home')}}">{!! Lang::get('home.profil') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.program') !!}</a>
+                        <a class="page-scroll" href="{{route('home')}}">{!! Lang::get('home.program') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.publikasi') !!}</a>
+                        <a class="page-scroll" href="{{ route('home') }}">{!! Lang::get('home.publikasi') !!}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="{{routes('home')}}">{!! Lang::get('home.kontak') !!}</a>
+                        <a class="page-scroll" href="{{ route('home') }}">{!! Lang::get('home.kontak') !!}</a>
                     </li>
                     <li>
                       <a class="navbar-brand page-scroll" href="#page-top"><img src="/img/Flag_of_Indonesia.svg.png" width="30px" id="logo_bendera"></a>
